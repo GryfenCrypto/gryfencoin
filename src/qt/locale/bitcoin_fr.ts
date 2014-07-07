@@ -1766,8 +1766,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a MaiaCoin address (e.g. Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</source>
-        <translation>Entrer une adresse MaiaCoin (par ex: Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</translation>
+        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Entrer une adresse MaiaCoin (par ex: MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1910,8 +1910,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to send the payment to  (e.g. Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</source>
-        <translation>Adresse destinataire du paiement (ex: Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</translation>
+        <source>The address to send the payment to  (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Adresse destinataire du paiement (ex: MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1940,8 +1940,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a MaiaCoin address (e.g. Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</source>
-        <translation>Entrer une adresse MaiaCoin (ex: Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</translation>
+        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Entrer une adresse MaiaCoin (ex: MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
 </context>
 <context>
@@ -1964,8 +1964,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+18"/>
-        <source>The address to sign the message with (e.g. Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</source>
-        <translation>Entrer une adresse MaiaCoin (ex: Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</translation>
+        <source>The address to sign the message with (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Entrer une adresse MaiaCoin (ex: MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -2028,8 +2028,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+21"/>
-        <source>The address the message was signed with (e.g. Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</source>
-        <translation>L&apos;adresse avec laquelle le message à été signé (ex: Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</translation>
+        <source>The address the message was signed with (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>L&apos;adresse avec laquelle le message à été signé (ex: MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="+40"/>
@@ -2044,8 +2044,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a MaiaCoin address (e.g. Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</source>
-        <translation>Entrer une adresse MaiaCoin (e.g. Sjz75uKHzUQJnSdzvpiigEGxseKkDhQToX)</translation>
+        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Entrer une adresse MaiaCoin (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="-2"/>

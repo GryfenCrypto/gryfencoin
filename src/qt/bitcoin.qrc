@@ -43,11 +43,17 @@
         <file alias="bitcoin_testnet">res/icons/bitcoin_testnet.png</file>
         <file alias="toolbar">res/icons/16x16.png</file>
         <file alias="toolbar_testnet">res/icons/16x16_testnet.png</file>
+        <file alias="statistics">res/icons/statistics.png</file>
+        <file alias="block">res/icons/block.png</file>
+        <file alias="irc">res/icons/IRC_32x32.png</file>
+        <file alias="twitter">res/icons/twitter_32x32.png</file>
     </qresource>
     <qresource prefix="/images">
         <file alias="about">res/images/about.png</file>
         <file alias="splash">res/images/splash.png</file>
         <file alias="Wallet_Logo">res/images/Wallet_Logo.png</file>
+        <file alias="MaiaBG">res/images/backg.png</file>
+        <file alias="Small_logo">res/images/Maia60x60.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>

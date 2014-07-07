@@ -2,8 +2,9 @@
 
 TEMPLATE = app
 TARGET = maiacoin-qt
-VERSION = 1.0.0.0
+VERSION = 2.0.0.1
 INCLUDEPATH += src src/json src/qt
+QT += core gui network
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 CONFIG += no_include_pwd
 CONFIG += thread
@@ -68,7 +69,7 @@ QMAKE_LFLAGS *= -fstack-protector-all --param ssp-buffer-size=1
 # This can be enabled for Windows, when we switch to MinGW >= 4.4.x.
 }
 # for extra security on Windows: enable ASLR and DEP via GCC linker flags
-win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
+win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat,--large-address-aware -static
 win32:QMAKE_LFLAGS += -static-libgcc -static-libstdc++
 lessThan(QT_MAJOR_VERSION, 5): win32: QMAKE_LFLAGS *= -static
 
@@ -126,6 +127,8 @@ contains(BITCOIN_NEED_QT_PLUGINS, 1) {
 
 INCLUDEPATH += src/leveldb/include src/leveldb/helpers
 LIBS += $$PWD/src/leveldb/libleveldb.a $$PWD/src/leveldb/libmemenv.a
+
+##hashing sources
 SOURCES += src/txdb-leveldb.cpp \
     src/bloom.cpp \
     src/hash.cpp \
@@ -146,6 +149,85 @@ SOURCES += src/txdb-leveldb.cpp \
     src/shabal.c \
     src/whirlpool.c \
     src/md_helper.c
+
+### tor sources
+#SOURCES +=  src/tor/address.c \
+#    src/tor/addressmap.c \
+#    src/tor/aes.c \
+#    src/tor/backtrace.c \
+#    src/tor/buffers.c \
+#    src/tor/channel.c \
+#    src/tor/channeltls.c \
+#    src/tor/circpathbias.c \
+#    src/tor/circuitbuild.c \
+#    src/tor/circuitlist.c \
+#    src/tor/circuitmux.c \
+#    src/tor/circuitmux_ewma.c \
+#    src/tor/circuitstats.c \
+#    src/tor/circuituse.c \
+#    src/tor/command.c \
+#    src/tor/compat.c \
+#    src/tor/compat_libevent.c \
+#    src/tor/config.c \
+#    src/tor/config_codedigest.c \
+#    src/tor/confparse.c \
+#    src/tor/connection.c \
+#    src/tor/connection_edge.c \
+#    src/tor/connection_or.c \
+#    src/tor/container.c \
+#    src/tor/control.c \
+#    src/tor/cpuworker.c \
+#    src/tor/crypto.c \
+#    src/tor/crypto_curve25519.c \
+#    src/tor/crypto_format.c \
+#    src/tor/curve25519-donna.c \
+#    src/tor/di_ops.c \
+#    src/tor/directory.c \
+#    src/tor/dirserv.c \
+#    src/tor/dirvote.c \
+#    src/tor/dns.c \
+#    src/tor/dnsserv.c \
+#    src/tor/entrynodes.c \
+#    src/tor/ext_orport.c \
+#    src/tor/fp_pair.c \
+#    src/tor/geoip.c \
+#    src/tor/hibernate.c \
+#    src/tor/log.c \
+#    src/tor/memarea.c \
+#    src/tor/mempool.c \
+#    src/tor/microdesc.c \
+#    src/tor/networkstatus.c \
+#    src/tor/nodelist.c \
+#    src/tor/onion.c \
+#    src/tor/onion_fast.c \
+#    src/tor/onion_main.c \
+#    src/tor/onion_ntor.c \
+#    src/tor/onion_tap.c \
+#    src/tor/policies.c \
+#    src/tor/maiacoin.cpp \
+#    src/tor/procmon.c \
+#    src/tor/reasons.c \
+#    src/tor/relay.c \
+#    src/tor/rendclient.c \
+#    src/tor/rendcommon.c \
+#    src/tor/rendmid.c \
+#    src/tor/rendservice.c \
+#    src/tor/rephist.c \
+#    src/tor/replaycache.c \
+#    src/tor/router.c \
+#    src/tor/routerlist.c \
+#    src/tor/routerparse.c \
+#    src/tor/routerset.c \
+#    src/tor/sandbox.c \
+#    src/tor/statefile.c \
+#    src/tor/status.c \
+#    src/tor/strlcat.c \
+#    src/tor/strlcpy.c \
+#    src/tor/tor_util.c \
+#    src/tor/torgzip.c \
+#    src/tor/tortls.c \
+#    src/tor/transports.c \
+#    src/tor/util_codedigest.c
 
 !win32 {
     # we use QMAKE_CXXFLAGS_RELEASE even without RELEASE=1 because we use RELEASE to indicate linking preferences not -O preferences
@@ -206,6 +288,10 @@ HEADERS += src/qt/bitcoingui.h \
     src/qt/aboutdialog.h \
     src/qt/editaddressdialog.h \
     src/qt/bitcoinaddressvalidator.h \
+    src/qt/blockbrowser.h \
+    src/qt/statisticspage.h \
+    src/qt/chatwindow.h \
+    src/qt/serveur.h \
     src/alert.h \
     src/addrman.h \
     src/base58.h \
@@ -298,6 +384,88 @@ HEADERS += src/qt/bitcoingui.h \
     src/sph_shabal.h \
     src/sph_whirlpool.h
 
+### tor headers
+#HEADERS +=  src/tor/address.h \
+#    src/tor/addressmap.h \
+#    src/tor/aes.h \
+#    src/tor/backtrace.h \
+#    src/tor/buffers.h \
+#    src/tor/channel.h \
+#    src/tor/channeltls.h \
+#    src/tor/circpathbias.h \
+#    src/tor/circuitbuild.h \
+#    src/tor/circuitlist.h \
+#    src/tor/circuitmux.h \
+#    src/tor/circuitmux_ewma.h \
+#    src/tor/circuitstats.h \
+#    src/tor/circuituse.h \
+#    src/tor/command.h \
+#    src/tor/compat_libevent.h \
+#    src/tor/config.h \
+#    src/tor/confparse.h \
+#    src/tor/connection.h \
+#    src/tor/connection_edge.h \
+#    src/tor/connection_or.h \
+#    src/tor/container.h \
+#    src/tor/control.h \
+#    src/tor/cpuworker.h \
+#    src/tor/crypto.h \
+#    src/tor/crypto_curve25519.h \
+#    src/tor/di_ops.h \
+#    src/tor/directory.h \
+#    src/tor/dirserv.h \
+#    src/tor/dirvote.h \
+#    src/tor/dns.h \
+#    src/tor/dnsserv.h \
+#    src/tor/entrynodes.h \
+#    src/tor/fp_pair.h \
+#    src/tor/geoip.h \
+#    src/tor/hibernate.h \
+#    src/tor/ht.h \
+#    src/tor/maiacoin.h \
+#    src/tor/memarea.h \
+#    src/tor/mempool.h \
+#    src/tor/microdesc.h \
+#    src/tor/networkstatus.h \
+#    src/tor/nodelist.h \
+#    src/tor/ntmain.h \
+#    src/tor/onion.h \
+#    src/tor/onion_fast.h \
+#    src/tor/onion_main.h \
+#    src/tor/onion_ntor.h \
+#    src/tor/onion_tap.h \
+#    src/tor/or.h \
+#    src/tor/policies.h \
+#    src/tor/procmon.h \
+#    src/tor/reasons.h \
+#    src/tor/relay.h \
+#    src/tor/rendclient.h \
+#    src/tor/rendcommon.h \
+#    src/tor/rendmid.h \
+#    src/tor/rendservice.h \
+#    src/tor/rephist.h \
+#    src/tor/replaycache.h \
+#    src/tor/router.h \
+#    src/tor/routerlist.h \
+#    src/tor/routerparse.h \
+#    src/tor/routerset.h \
+#    src/tor/sandbox.h \
+#    src/tor/statefile.h \
+#    src/tor/status.h \
+#    src/tor/telesupport.h \
+#    src/tor/tinytest.h \
+#    src/tor/tinytest_macros.h \
+#    src/tor/torcompat.h \
+#    src/tor/torqueue.h \
+#    src/tor/tor_util.h \
+#    src/tor/torgzip.h \
+#    src/tor/tprint.h \
+#    src/tor/torlog.h \
+#    src/tor/tortls.h \
+#    src/tor/transports.h \
+#    src/tor/event2/util.h
+
+
 SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/transactiontablemodel.cpp \
     src/qt/addresstablemodel.cpp \
@@ -310,6 +478,10 @@ SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/aboutdialog.cpp \
     src/qt/editaddressdialog.cpp \
     src/qt/bitcoinaddressvalidator.cpp \
+    src/qt/blockbrowser.cpp \
+    src/qt/statisticspage.cpp \
+    src/qt/chatwindow.cpp \
+    src/qt/serveur.cpp \
     src/alert.cpp \
     src/version.cpp \
     src/sync.cpp \
@@ -382,7 +554,10 @@ FORMS += \
     src/qt/forms/sendcoinsentry.ui \
     src/qt/forms/askpassphrasedialog.ui \
     src/qt/forms/rpcconsole.ui \
-    src/qt/forms/optionsdialog.ui
+    src/qt/forms/optionsdialog.ui \
+    src/qt/forms/blockbrowser.ui \
+    src/qt/forms/statisticspage.ui \
+    src/qt/forms/chatwindow.ui
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h
