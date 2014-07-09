@@ -398,7 +398,7 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(addressBookAction);
 	toolbar->addAction(statisticsAction);
 	toolbar->addAction(blockAction);
-    toolbar->addAction(chatAction);
+//    toolbar->addAction(chatAction);
     toolbar->addAction(exportAction);
     QWidget* spacer = new QWidget();
     spacer->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
