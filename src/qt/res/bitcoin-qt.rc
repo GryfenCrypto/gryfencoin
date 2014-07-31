@@ -18,14 +18,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "MaiaCoin"
-            VALUE "FileDescription",    "MaiaCoin-Qt (OSS GUI client for MaiaCoin)"
+            VALUE "CompanyName",        "GryfenCoin"
+            VALUE "FileDescription",    "GryfenCoin-Qt (OSS GUI client for GryfenCoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "maiacoin-qt"
-            VALUE "LegalCopyright",     "2014 The MaiaCoin developers"
+            VALUE "InternalName",       "gryfencoin-qt"
+            VALUE "LegalCopyright",     "2014 The GryfenCoin developers"
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "maiacoin-qt.exe"
-            VALUE "ProductName",        "MaiaCoin-Qt"
+            VALUE "OriginalFilename",   "gryfencoin-qt.exe"
+            VALUE "ProductName",        "GryfenCoin-Qt"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

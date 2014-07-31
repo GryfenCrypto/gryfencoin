@@ -3,19 +3,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About MaiaCoin</source>
-        <translation>O MaiaCoin</translation>
+        <source>About GryfenCoin</source>
+        <translation>O GryfenCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;MaiaCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;MaiaCoin&lt;/b&gt; verzija</translation>
+        <source>&lt;b&gt;GryfenCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;GryfenCoin&lt;/b&gt; verzija</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The MaiaCoin developers</source>
+Copyright © 2014 The GryfenCoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -63,8 +63,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your MaiaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>To so vaši MaiaCoin naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
+        <source>These are your GryfenCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>To so vaši GryfenCoin naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -78,8 +78,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a MaiaCoin address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva MaiaCoin naslova</translation>
+        <source>Sign a message to prove you own a GryfenCoin address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva GryfenCoin naslova</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -93,8 +93,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified MaiaCoin address</source>
-        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim MaiaCoin naslovom</translation>
+        <source>Verify a message to ensure it was signed with a specified GryfenCoin address</source>
+        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim GryfenCoin naslovom</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -261,8 +261,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-58"/>
-        <source>MaiaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>MaiaCoin se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
+        <source>GryfenCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>GryfenCoin se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -375,8 +375,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+6"/>
-        <source>Show information about MaiaCoin</source>
-        <translation>Pokaži informacije o MaiaCoin</translation>
+        <source>Show information about GryfenCoin</source>
+        <translation>Pokaži informacije o GryfenCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -425,12 +425,12 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-64"/>
-        <source>Send coins to a MaiaCoin address</source>
-        <translation>Pošlji kovance na MaiaCoin naslov</translation>
+        <source>Send coins to a GryfenCoin address</source>
+        <translation>Pošlji kovance na GryfenCoin naslov</translation>
     </message>
     <message>
         <location line="+47"/>
-        <source>Modify configuration options for MaiaCoin</source>
+        <source>Modify configuration options for GryfenCoin</source>
         <translation>Spremeni nastavitve za Maiacoin</translation>
     </message>
     <message>
@@ -470,8 +470,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-202"/>
-        <source>MaiaCoin</source>
-        <translation>MaiaCoin</translation>
+        <source>GryfenCoin</source>
+        <translation>GryfenCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -480,8 +480,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+180"/>
-        <source>&amp;About MaiaCoin</source>
-        <translation>&amp;O MaiaCoin</translation>
+        <source>&amp;About GryfenCoin</source>
+        <translation>&amp;O GryfenCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -537,13 +537,13 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>MaiaCoin client</source>
-        <translation>MaiaCoin program</translation>
+        <source>GryfenCoin client</source>
+        <translation>GryfenCoin program</translation>
     </message>
     <message numerus="yes">
         <location line="+75"/>
-        <source>%n active connection(s) to MaiaCoin network</source>
-        <translation><numerusform>%n aktivne povezave na MaiaCoin omrežje</numerusform><numerusform>%n aktivnih povezav na MaiaCoin omrežje</numerusform><numerusform>%n aktivnih povezav na MaiaCoin omrežje</numerusform><numerusform>%n aktivnih povezav na MaiaCoin omrežje</numerusform></translation>
+        <source>%n active connection(s) to GryfenCoin network</source>
+        <translation><numerusform>%n aktivne povezave na GryfenCoin omrežje</numerusform><numerusform>%n aktivnih povezav na GryfenCoin omrežje</numerusform><numerusform>%n aktivnih povezav na GryfenCoin omrežje</numerusform><numerusform>%n aktivnih povezav na GryfenCoin omrežje</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -582,12 +582,12 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-312"/>
-        <source>About MaiaCoin card</source>
+        <source>About GryfenCoin card</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about MaiaCoin card</source>
+        <source>Show information about GryfenCoin card</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -667,8 +667,8 @@ Naslov: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid MaiaCoin address or malformed URI parameters.</source>
-        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega MaiaCoin naslova ali slabih parametrov URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid GryfenCoin address or malformed URI parameters.</source>
+        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega GryfenCoin naslova ali slabih parametrov URI.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -727,8 +727,8 @@ Naslov: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. MaiaCoin can no longer continue safely and will quit.</source>
-        <translation>Prišlo je do usodne napake. Program MaiaCoin se ne more več varno nadaljevati in se bo zato zaprl. </translation>
+        <source>A fatal error occurred. GryfenCoin can no longer continue safely and will quit.</source>
+        <translation>Prišlo je do usodne napake. Program GryfenCoin se ne more več varno nadaljevati in se bo zato zaprl. </translation>
     </message>
 </context>
 <context>
@@ -1061,8 +1061,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid MaiaCoin address.</source>
-        <translation>Vneseni naslov &quot;%1&quot; ni veljaven MaiaCoin naslov.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid GryfenCoin address.</source>
+        <translation>Vneseni naslov &quot;%1&quot; ni veljaven GryfenCoin naslov.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1080,8 +1080,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>MaiaCoin-Qt</source>
-        <translation>MaiaCoin-Qt</translation>
+        <source>GryfenCoin-Qt</source>
+        <translation>GryfenCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1153,13 +1153,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start MaiaCoin after logging in to the system.</source>
-        <translation>Avtomatično zaženi MaiaCoin ob zagonu sistema.</translation>
+        <source>Automatically start GryfenCoin after logging in to the system.</source>
+        <translation>Avtomatično zaženi GryfenCoin ob zagonu sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start MaiaCoin on system login</source>
-        <translation>&amp;Zaženi MaiaCoin ob prijavi v sistem</translation>
+        <source>&amp;Start GryfenCoin on system login</source>
+        <translation>&amp;Zaženi GryfenCoin ob prijavi v sistem</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1178,8 +1178,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the MaiaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avtomatično odpri vrata na routerju za MaiaCoin program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
+        <source>Automatically open the GryfenCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avtomatično odpri vrata na routerju za GryfenCoin program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1188,8 +1188,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the MaiaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Poveži se na MaiaCoin omrežje skozi SOCKS proxy (npr. ko se povezujete prek Tora)</translation>
+        <source>Connect to the GryfenCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Poveži se na GryfenCoin omrežje skozi SOCKS proxy (npr. ko se povezujete prek Tora)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1263,8 +1263,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting MaiaCoin.</source>
-        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu MaiaCoin aplikacije. </translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting GryfenCoin.</source>
+        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu GryfenCoin aplikacije. </translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1278,8 +1278,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show MaiaCoin addresses in the transaction list or not.</source>
-        <translation>Izbira prikaza MaiaCoin naslovov v seznamu transakcij.</translation>
+        <source>Whether to show GryfenCoin addresses in the transaction list or not.</source>
+        <translation>Izbira prikaza GryfenCoin naslovov v seznamu transakcij.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1325,8 +1325,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting MaiaCoin.</source>
-        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu MaiaCoin aplikacije</translation>
+        <source>This setting will take effect after restarting GryfenCoin.</source>
+        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu GryfenCoin aplikacije</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1344,8 +1344,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MaiaCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z MaiaCoin omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GryfenCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z GryfenCoin omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1560,8 +1560,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the MaiaCoin-Qt help message to get a list with possible MaiaCoin command-line options.</source>
-        <translation>Prikaži MaiaCoin-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice MaiaCoin aplikacije</translation>
+        <source>Show the GryfenCoin-Qt help message to get a list with possible GryfenCoin command-line options.</source>
+        <translation>Prikaži GryfenCoin-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice GryfenCoin aplikacije</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1580,13 +1580,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>MaiaCoin - Debug window</source>
-        <translation>MaiaCoin - okno za odpravljanje napak</translation>
+        <source>GryfenCoin - Debug window</source>
+        <translation>GryfenCoin - okno za odpravljanje napak</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>MaiaCoin Core</source>
-        <translation>MaiaCoin jedro</translation>
+        <source>GryfenCoin Core</source>
+        <translation>GryfenCoin jedro</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1595,8 +1595,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the MaiaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Odpri MaiaCoin datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
+        <source>Open the GryfenCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Odpri GryfenCoin datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1605,8 +1605,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the MaiaCoin RPC console.</source>
-        <translation>Dobrodošli v MaiaCoin RPC konzoli.</translation>
+        <source>Welcome to the GryfenCoin RPC console.</source>
+        <translation>Dobrodošli v GryfenCoin RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1679,8 +1679,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 MAIA</source>
-        <translation>123.456 MAIA {0.00 ?}</translation>
+        <source>0.00 GFC</source>
+        <translation>123.456 GFC {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1749,8 +1749,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 MAIA</source>
-        <translation>123.456 MAIA</translation>
+        <source>123.456 GFC</source>
+        <translation>123.456 GFC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1764,8 +1764,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
-        <translation>Vnesite MaiaCoin naslov (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Vnesite GryfenCoin naslov (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1864,8 +1864,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid MaiaCoin address</source>
-        <translation>OPOZORILO: Neveljaven MaiaCoin naslov</translation>
+        <source>WARNING: Invalid GryfenCoin address</source>
+        <translation>OPOZORILO: Neveljaven GryfenCoin naslov</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1938,8 +1938,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
-        <translation>Vnesite MaiaCoin naslov (npr. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Vnesite GryfenCoin naslov (npr. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
 </context>
 <context>
@@ -1999,8 +1999,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this MaiaCoin address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva MaiaCoin naslova</translation>
+        <source>Sign the message to prove you own this GryfenCoin address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva GryfenCoin naslova</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2031,8 +2031,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified MaiaCoin address</source>
-        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim MaiaCoin naslovom</translation>
+        <source>Verify the message to ensure it was signed with the specified GryfenCoin address</source>
+        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim GryfenCoin naslovom</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2042,8 +2042,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
-        <translation>Vnesite MaiaCoin naslov (npr. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Vnesite GryfenCoin naslov (npr. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2052,8 +2052,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter MaiaCoin signature</source>
-        <translation>Vnesite MaiaCoin podpis</translation>
+        <source>Enter GryfenCoin signature</source>
+        <translation>Vnesite GryfenCoin podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2623,8 +2623,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>MaiaCoin version</source>
-        <translation>MaiaCoin različica</translation>
+        <source>GryfenCoin version</source>
+        <translation>GryfenCoin različica</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2808,8 +2808,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong MaiaCoin will not work properly.</source>
-        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno MaiaCoin ne bo deloval.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GryfenCoin will not work properly.</source>
+        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno GryfenCoin ne bo deloval.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -3004,7 +3004,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, nastaviti morate rpcgeslo v konfiguracijski datoteki: 
  %s
@@ -3015,7 +3015,7 @@ rpcpassword=%s
 Uporabniško ime in geslo NE SMETA biti ista. 
 Če datoteka ne obstaja, jo ustvarite z lastniškimi dovoljenji za datoteke. 
 Prav tako je priporočeno, da nastavite alernotify, tkako da vas opozori na probleme;
-na primer: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alarm&quot; admin@foo.com
+na primer: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alarm&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3140,13 +3140,13 @@ na primer: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alarm&quot; admin@foo.c
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  MaiaCoin is probably already running.</source>
-        <translation>Ni bilo mogoče najti podatkovnega imenika %s. Aplikacija MaiaCoin je verjetno že zagnana.</translation>
+        <source>Cannot obtain a lock on data directory %s.  GryfenCoin is probably already running.</source>
+        <translation>Ni bilo mogoče najti podatkovnega imenika %s. Aplikacija GryfenCoin je verjetno že zagnana.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>MaiaCoin</source>
-        <translation>MaiaCoin</translation>
+        <source>GryfenCoin</source>
+        <translation>GryfenCoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3180,13 +3180,13 @@ na primer: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alarm&quot; admin@foo.c
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of MaiaCoin</source>
-        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo MaiaCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of GryfenCoin</source>
+        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo GryfenCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart MaiaCoin to complete</source>
-        <translation>Denarnica mora biti prepisana: ponovno odprite MaiaCoin za dokončanje</translation>
+        <source>Wallet needed to be rewritten: restart GryfenCoin to complete</source>
+        <translation>Denarnica mora biti prepisana: ponovno odprite GryfenCoin za dokončanje</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3255,8 +3255,8 @@ na primer: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alarm&quot; admin@foo.c
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. MaiaCoin is probably already running.</source>
-        <translation>Navezava v %s  na tem računalniku ni mogoča MaiaCoin aplikacija je verjetno že zagnana.</translation>
+        <source>Unable to bind to %s on this computer. GryfenCoin is probably already running.</source>
+        <translation>Navezava v %s  na tem računalniku ni mogoča GryfenCoin aplikacija je verjetno že zagnana.</translation>
     </message>
     <message>
         <location line="-97"/>

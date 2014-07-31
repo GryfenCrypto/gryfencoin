@@ -64,7 +64,7 @@ namespace Checkpoints
         return NULL;
     }
 
-    // maiacoin: synchronized checkpoint (centrally broadcasted)
+    // gryfencoin: synchronized checkpoint (centrally broadcasted)
     uint256 hashSyncCheckpoint = 0;
     uint256 hashPendingCheckpoint = 0;
     CSyncCheckpoint checkpointMessage;
@@ -72,7 +72,7 @@ namespace Checkpoints
     uint256 hashInvalidCheckpoint = 0;
     CCriticalSection cs_hashSyncCheckpoint;
 
-    // maiacoin: get last synchronized checkpoint
+    // gryfencoin: get last synchronized checkpoint
     CBlockIndex* GetLastSyncCheckpoint()
     {
         LOCK(cs_hashSyncCheckpoint);
@@ -83,7 +83,7 @@ namespace Checkpoints
         return NULL;
     }
 
-    // maiacoin: only descendant of current sync-checkpoint is allowed
+    // gryfencoin: only descendant of current sync-checkpoint is allowed
     bool ValidateSyncCheckpoint(uint256 hashCheckpoint)
     {
         if (!mapBlockIndex.count(hashSyncCheckpoint))
@@ -236,7 +236,7 @@ namespace Checkpoints
         return false;
     }
 
-    // maiacoin: reset synchronized checkpoint to last hardened checkpoint
+    // gryfencoin: reset synchronized checkpoint to last hardened checkpoint
     bool ResetSyncCheckpoint()
     {
         LOCK(cs_hashSyncCheckpoint);
@@ -347,12 +347,12 @@ namespace Checkpoints
     }
 }
 
-// maiacoin: sync-checkpoint master key
+// gryfencoin: sync-checkpoint master key
 const std::string CSyncCheckpoint::strMasterPubKey = "04a18357665ed7a802dcf252ef528d3dc786da38653b51d1ab8e9f4820b55aca807892a056781967315908ac205940ec9d6f2fd0a85941966971eac7e475a27826";
 
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 
-// maiacoin: verify signature of sync-checkpoint message
+// gryfencoin: verify signature of sync-checkpoint message
 bool CSyncCheckpoint::CheckSignature()
 {
     CKey key;
@@ -367,7 +367,7 @@ bool CSyncCheckpoint::CheckSignature()
     return true;
 }
 
-// maiacoin: process synchronized checkpoint
+// gryfencoin: process synchronized checkpoint
 bool CSyncCheckpoint::ProcessSyncCheckpoint(CNode* pfrom)
 {
     if (!CheckSignature())

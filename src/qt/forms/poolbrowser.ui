@@ -70,7 +70,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:rgb(24, 24, 24);&quot;&gt;Convert MaiaCoin to USD :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; color:#181818;&quot;&gt;Convert GryfenCoin to USD :&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="egals">
@@ -112,14 +112,6 @@
        <string>=</string>
       </property>
      </widget>
-     <zorder>label_13</zorder>
-     <zorder>bitcoin</zorder>
-     <zorder>label_31</zorder>
-     <zorder>egals</zorder>
-     <zorder>egald</zorder>
-     <zorder>startButton</zorder>
-     <zorder>bittrex</zorder>
-     <zorder>egal</zorder>
     </widget>
    </item>
    <item row="1" column="0">
@@ -461,7 +453,7 @@
          <item row="0" column="0">
           <widget class="QLabel" name="label_16">
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Volume MAIA&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Volume GFC&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
          </item>
@@ -638,12 +630,12 @@
        <string>Cryptsy</string>
       </attribute>
      </widget>
-      <widget class="QWidget" name="tab_6">
+     <widget class="QWidget" name="tab_6">
       <attribute name="title">
        <string>Mintpal</string>
       </attribute>
      </widget>
-   </widget>
+    </widget>
    </item>
   </layout>
  </widget>

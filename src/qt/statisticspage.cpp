@@ -68,7 +68,9 @@ void StatisticsPage::updateStatistics()
     QString Qlpawrate = model->getLastBlockDate().toString();
 
     QString QPeers = QString::number(peers);
-    QString qVolume = QLocale(QLocale::English).toString(volume);
+    //QString qVolume = QLocale(QLocale::English).toString(volume);
+    QVariant qvVolume((qlonglong)volume);
+    QString qVolume=qvVolume.toString();
 
     if(nHeight > heightPrevious)
     {
@@ -150,11 +152,11 @@ void StatisticsPage::updateStatistics()
 
     if(volume > volumePrevious)
     {
-        ui->volumeBox->setText("<b><font color=\"green\">" + qVolume + " MAIA" + "</font></b>");
+        ui->volumeBox->setText("<b><font color=\"green\">" + qVolume + " GFC" + "</font></b>");
     } else if(volume < volumePrevious) {
-        ui->volumeBox->setText("<b><font color=\"red\">" + qVolume + " MAIA" + "</font></b>");
+        ui->volumeBox->setText("<b><font color=\"red\">" + qVolume + " GFC" + "</font></b>");
     } else {
-        ui->volumeBox->setText(qVolume + " MAIA");
+        ui->volumeBox->setText(qVolume + " GFC");
     }
     updatePrevious(nHeight, nMinWeight, nNetworkWeight, phase, nSubsidy, pHardness, pHardness2, pPawrate2, Qlpawrate, peers, volume);
 }

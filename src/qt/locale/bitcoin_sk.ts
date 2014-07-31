@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About MaiaCoin</source>
+        <source>About GryfenCoin</source>
         <translation>O Maiacoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;MaiaCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;MaiaCoin&lt;/b&gt; verzia</translation>
+        <source>&lt;b&gt;GryfenCoin&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;GryfenCoin&lt;/b&gt; verzia</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The MaiaCoin developers</source>
+Copyright © 2014 The GryfenCoin developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The MaiaCoin developers</translation>
+Copyright © 2014 The GryfenCoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Tento produkt obsahuje softvér vyvinutý Projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your MaiaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Toto sú vaše MaiaCoin adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, takže môžete sledovať, kto Vám platí.</translation>
+        <source>These are your GryfenCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Toto sú vaše GryfenCoin adresy pre príjem platieb. Možno budete chcieť dať inú každému odosielateľovi, takže môžete sledovať, kto Vám platí.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -80,8 +80,8 @@ Tento produkt obsahuje softvér vyvinutý Projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a MaiaCoin address</source>
-        <translation>Podpísať správu, že vlastníte MaiaCoin adresu</translation>
+        <source>Sign a message to prove you own a GryfenCoin address</source>
+        <translation>Podpísať správu, že vlastníte GryfenCoin adresu</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Tento produkt obsahuje softvér vyvinutý Projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified MaiaCoin address</source>
-        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou MaiaCoin adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified GryfenCoin address</source>
+        <translation>Overte správu, aby ste zabezpečili, že bola podpísaná s určitou GryfenCoin adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ Tento produkt obsahuje softvér vyvinutý Projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-58"/>
-        <source>MaiaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>MaiaCoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
+        <source>GryfenCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>GryfenCoin sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -377,8 +377,8 @@ Tento produkt obsahuje softvér vyvinutý Projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+6"/>
-        <source>Show information about MaiaCoin</source>
-        <translation>Zobraziť informácie o MaiaCoin</translation>
+        <source>Show information about GryfenCoin</source>
+        <translation>Zobraziť informácie o GryfenCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -427,13 +427,13 @@ Tento produkt obsahuje softvér vyvinutý Projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-64"/>
-        <source>Send coins to a MaiaCoin address</source>
-        <translation>Poslať mince na MaiaCoin adresu</translation>
+        <source>Send coins to a GryfenCoin address</source>
+        <translation>Poslať mince na GryfenCoin adresu</translation>
     </message>
     <message>
         <location line="+47"/>
-        <source>Modify configuration options for MaiaCoin</source>
-        <translation>Upraviť možnosti konfigurácie pre MaiaCoin</translation>
+        <source>Modify configuration options for GryfenCoin</source>
+        <translation>Upraviť možnosti konfigurácie pre GryfenCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -472,8 +472,8 @@ Tento produkt obsahuje softvér vyvinutý Projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-202"/>
-        <source>MaiaCoin</source>
-        <translation>MaiaCoin</translation>
+        <source>GryfenCoin</source>
+        <translation>GryfenCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -482,8 +482,8 @@ Tento produkt obsahuje softvér vyvinutý Projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="+180"/>
-        <source>&amp;About MaiaCoin</source>
-        <translation>&amp;O MaiaCoin</translation>
+        <source>&amp;About GryfenCoin</source>
+        <translation>&amp;O GryfenCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -539,13 +539,13 @@ Tento produkt obsahuje softvér vyvinutý Projektom OpenSSL Project pre použiti
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>MaiaCoin client</source>
-        <translation>MaiaCoin client</translation>
+        <source>GryfenCoin client</source>
+        <translation>GryfenCoin client</translation>
     </message>
     <message numerus="yes">
         <location line="+75"/>
-        <source>%n active connection(s) to MaiaCoin network</source>
-        <translation><numerusform>%n aktívne spojenie s MaiaCoin sieťov</numerusform><numerusform>%n aktívnych spojení s MaiaCoin sieťov</numerusform><numerusform>%n aktívnych spojení s MaiaCoin sieťov</numerusform></translation>
+        <source>%n active connection(s) to GryfenCoin network</source>
+        <translation><numerusform>%n aktívne spojenie s GryfenCoin sieťov</numerusform><numerusform>%n aktívnych spojení s GryfenCoin sieťov</numerusform><numerusform>%n aktívnych spojení s GryfenCoin sieťov</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -584,13 +584,13 @@ Tento produkt obsahuje softvér vyvinutý Projektom OpenSSL Project pre použiti
     </message>
     <message>
         <location line="-312"/>
-        <source>About MaiaCoin card</source>
-        <translation>O MaiaCoin karte</translation>
+        <source>About GryfenCoin card</source>
+        <translation>O GryfenCoin karte</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about MaiaCoin card</source>
-        <translation>Zobraziť informácie o MaiaCoin karte</translation>
+        <source>Show information about GryfenCoin card</source>
+        <translation>Zobraziť informácie o GryfenCoin karte</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -668,8 +668,8 @@ Adresa: %4</translation>
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid MaiaCoin address or malformed URI parameters.</source>
-        <translation>URI nemožno analyzovať! To môže byť spôsobené neplatnou MaiaCoin adresu alebo chybnými URI parametrami.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid GryfenCoin address or malformed URI parameters.</source>
+        <translation>URI nemožno analyzovať! To môže byť spôsobené neplatnou GryfenCoin adresu alebo chybnými URI parametrami.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -728,8 +728,8 @@ Adresa: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. MaiaCoin can no longer continue safely and will quit.</source>
-        <translation>Došlo k závažnej chybe. MaiaCoin už nemôže pokračovať bezpečne a bude ukončený.</translation>
+        <source>A fatal error occurred. GryfenCoin can no longer continue safely and will quit.</source>
+        <translation>Došlo k závažnej chybe. GryfenCoin už nemôže pokračovať bezpečne a bude ukončený.</translation>
     </message>
 </context>
 <context>
@@ -1062,8 +1062,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid MaiaCoin address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; nie je platnou MaiaCoin adresou.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid GryfenCoin address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; nie je platnou GryfenCoin adresou.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1081,8 +1081,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>MaiaCoin-Qt</source>
-        <translation>MaiaCoin-Qt</translation>
+        <source>GryfenCoin-Qt</source>
+        <translation>GryfenCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1154,13 +1154,13 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start MaiaCoin after logging in to the system.</source>
-        <translation>Automaticky spustiť MaiaCoin po prihlásení sa do systému.</translation>
+        <source>Automatically start GryfenCoin after logging in to the system.</source>
+        <translation>Automaticky spustiť GryfenCoin po prihlásení sa do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start MaiaCoin on system login</source>
-        <translation>&amp;Spustiť MaiaCoin pri prihlásení do systému</translation>
+        <source>&amp;Start GryfenCoin on system login</source>
+        <translation>&amp;Spustiť GryfenCoin pri prihlásení do systému</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1179,8 +1179,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the MaiaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automaticky otvoriť port klienta MaiaCoin na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
+        <source>Automatically open the GryfenCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automaticky otvoriť port klienta GryfenCoin na routeri. To funguje iba vtedy, ak váš router podporuje UPnP a je povolené.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1189,8 +1189,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the MaiaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Pripojenie k sieti MaiaCoin cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
+        <source>Connect to the GryfenCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Pripojenie k sieti GryfenCoin cez SOCKS proxy server (napr. pri pripojení cez Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1264,8 +1264,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting MaiaCoin.</source>
-        <translation>Jazyk používateľského rozhrania je možné tu nastaviť. Toto nastavenie sa prejaví až po reštartovaní MaiaCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting GryfenCoin.</source>
+        <translation>Jazyk používateľského rozhrania je možné tu nastaviť. Toto nastavenie sa prejaví až po reštartovaní GryfenCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1279,8 +1279,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show MaiaCoin addresses in the transaction list or not.</source>
-        <translation>Či chcete zobraziť MaiaCoin adresy v zozname transakcií alebo nie.</translation>
+        <source>Whether to show GryfenCoin addresses in the transaction list or not.</source>
+        <translation>Či chcete zobraziť GryfenCoin adresy v zozname transakcií alebo nie.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1326,8 +1326,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting MaiaCoin.</source>
-        <translation>Toto nastavenie sa prejaví až po reštartovaní MaiaCoin.</translation>
+        <source>This setting will take effect after restarting GryfenCoin.</source>
+        <translation>Toto nastavenie sa prejaví až po reštartovaní GryfenCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1345,8 +1345,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MaiaCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou MaiaCoin po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GryfenCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informácie môžu byť zastaralé. Vaša peňaženka sa automaticky synchronizuje so sieťou GryfenCoin po nadviazaní spojenia, ale tento proces nie je ešte dokončený.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1561,8 +1561,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the MaiaCoin-Qt help message to get a list with possible MaiaCoin command-line options.</source>
-        <translation>Zobraziť MaiaCoin-Qt nápovedu k získaniu zoznamu pre možnosti MaiaCoin príkazového riadku.</translation>
+        <source>Show the GryfenCoin-Qt help message to get a list with possible GryfenCoin command-line options.</source>
+        <translation>Zobraziť GryfenCoin-Qt nápovedu k získaniu zoznamu pre možnosti GryfenCoin príkazového riadku.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1581,13 +1581,13 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="-104"/>
-        <source>MaiaCoin - Debug window</source>
-        <translation>MaiaCoin - Ladiace okno</translation>
+        <source>GryfenCoin - Debug window</source>
+        <translation>GryfenCoin - Ladiace okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>MaiaCoin Core</source>
-        <translation>MaiaCoin Core</translation>
+        <source>GryfenCoin Core</source>
+        <translation>GryfenCoin Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1596,7 +1596,7 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the MaiaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the GryfenCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Otvorte Maiacoin ladenie log súbor z aktuálneho adresára dát. To môže trvať niekoľko sekúnd pre veľké súbory protokolu.</translation>
     </message>
     <message>
@@ -1606,7 +1606,7 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the MaiaCoin RPC console.</source>
+        <source>Welcome to the GryfenCoin RPC console.</source>
         <translation>Vitajte v Maiacoin RPC konzole.</translation>
     </message>
     <message>
@@ -1680,8 +1680,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 MAIA</source>
-        <translation>123.456 MAIA {0.00 ?}</translation>
+        <source>0.00 GFC</source>
+        <translation>123.456 GFC {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1750,8 +1750,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 MAIA</source>
-        <translation>123.456 MAIA</translation>
+        <source>123.456 GFC</source>
+        <translation>123.456 GFC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1765,8 +1765,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
-        <translation>Zadajte MaiaCoin adresu (napr. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Zadajte GryfenCoin adresu (napr. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1865,8 +1865,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid MaiaCoin address</source>
-        <translation>VAROVANIE: Neplatná MaiaCoin adresa</translation>
+        <source>WARNING: Invalid GryfenCoin address</source>
+        <translation>VAROVANIE: Neplatná GryfenCoin adresa</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1939,8 +1939,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
-        <translation>Zadaj a MaiaCoin addresu (napr. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Zadaj a GryfenCoin addresu (napr. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
 </context>
 <context>
@@ -2000,8 +2000,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this MaiaCoin address</source>
-        <translation>Podpísať správu ako dôkaz, že vlastníte túto MaiaCoin adresu</translation>
+        <source>Sign the message to prove you own this GryfenCoin address</source>
+        <translation>Podpísať správu ako dôkaz, že vlastníte túto GryfenCoin adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2032,8 +2032,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified MaiaCoin address</source>
-        <translation>Overte správu, aby zabezpečilo, že bola podpísaná s danou MaiaCoin adresu</translation>
+        <source>Verify the message to ensure it was signed with the specified GryfenCoin address</source>
+        <translation>Overte správu, aby zabezpečilo, že bola podpísaná s danou GryfenCoin adresu</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2043,8 +2043,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
-        <translation>Zadajte MaiaCoin adresu (napr. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Zadajte GryfenCoin adresu (napr. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2053,8 +2053,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter MaiaCoin signature</source>
-        <translation>Zadajte MaiaCoin podpis</translation>
+        <source>Enter GryfenCoin signature</source>
+        <translation>Zadajte GryfenCoin podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2624,8 +2624,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>MaiaCoin version</source>
-        <translation>MaiaCoin verzia</translation>
+        <source>GryfenCoin version</source>
+        <translation>GryfenCoin verzia</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2809,8 +2809,8 @@ Sumy nižšie ako 0,546 násobok minimálneho poplatku sú zobrazené ako DUST.<
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong MaiaCoin will not work properly.</source>
-        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny MaiaCoin nebude pracovať správne.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GryfenCoin will not work properly.</source>
+        <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny GryfenCoin nebude pracovať správne.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -3005,7 +3005,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíte nastaviť rpcpassword v konfiguračnom súbore:
  %s
@@ -3016,7 +3016,7 @@ rpcpassword=%s
 Užívateľské meno a heslo nesmú byť rovnaké. 
 Ak súbor neexistuje, vytvorte ho s oprávneniami súborov vlastníkov iba na čítatanie.
 Odporúča sa tiež nastaviť alertnotify, takže budete upozornení na problémy;
-napríklad: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo.com</translation>
+napríklad: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+51"/>
@@ -3140,13 +3140,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  MaiaCoin is probably already running.</source>
-        <translation>Nemožno získať zámok na dátový adresár %s. MaiaCoin už pravdepodobne beží.</translation>
+        <source>Cannot obtain a lock on data directory %s.  GryfenCoin is probably already running.</source>
+        <translation>Nemožno získať zámok na dátový adresár %s. GryfenCoin už pravdepodobne beží.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>MaiaCoin</source>
-        <translation>MaiaCoin</translation>
+        <source>GryfenCoin</source>
+        <translation>GryfenCoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3180,13 +3180,13 @@ napríklad: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of MaiaCoin</source>
-        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu MaiaCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of GryfenCoin</source>
+        <translation>Chyba pri načítaní wallet.dat: Peňaženka vyžaduje novšiu verziu GryfenCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart MaiaCoin to complete</source>
-        <translation>Peňaženka potrebuje byť prepísaná: reštartujte MaiaCoin k dokončeniu</translation>
+        <source>Wallet needed to be rewritten: restart GryfenCoin to complete</source>
+        <translation>Peňaženka potrebuje byť prepísaná: reštartujte GryfenCoin k dokončeniu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3255,8 +3255,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. MaiaCoin is probably already running.</source>
-        <translation>Nemôžem sa pripojiť na %s na tomto počítači. MaiaCoin je pravdepodobne už beží.</translation>
+        <source>Unable to bind to %s on this computer. GryfenCoin is probably already running.</source>
+        <translation>Nemôžem sa pripojiť na %s na tomto počítači. GryfenCoin je pravdepodobne už beží.</translation>
     </message>
     <message>
         <location line="-97"/>

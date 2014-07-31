@@ -14,7 +14,7 @@ using namespace json_spirit;
 
 const QString kBaseUrl = "https://bittrex.com/api/v1/public/";
 const QString kBaseUrl2 = "http://blockchain.info/tobtc?currency=USD&value=1";
-const QString kBaseUrl3 = "https://bittrex.com/api/v1/public/getorderbook?market=BTC-MAIA&type=both&depth=10";
+const QString kBaseUrl3 = "https://bittrex.com/api/v1/public/getorderbook?market=BTC-GFC&type=both&depth=10";
 QString lastp = "";
 QString askp = "";
 QString bidp = "";
@@ -67,7 +67,7 @@ void PoolBrowser::egaldo()
 
 void PoolBrowser::bittrex()
 {
-    QDesktopServices::openUrl(QUrl("https://www.bittrex.com/Market/Index?MarketName=BTC-MAIA"));
+    QDesktopServices::openUrl(QUrl("https://www.bittrex.com/Market/Index?MarketName=BTC-GFC"));
 }
 
 void PoolBrowser::randomChuckNorrisJoke()
@@ -116,7 +116,7 @@ void PoolBrowser::parseNetworkResponse( QNetworkReply *finished )
 
     // QNetworkReply is a QIODevice. So we read from it just like it was a file
     QString data = finished->readAll();
-    QStringList data2 = data.split("{\"MarketName\":\"BTC-MAIA\",\"High\":");
+    QStringList data2 = data.split("{\"MarketName\":\"BTC-GFC\",\"High\":");
     QStringList high = data2[1].split(",\"Low\":"); // high = high
     QStringList low = high[1].split(",\"Volume\":");
     QStringList volume = low[1].split(",\"Last\":");

@@ -60,7 +60,7 @@ void Serveur::connected()
 
 void Serveur::joins()
 {
-    join("#maiacoin");
+    join("#gryfencoin");
 }
 
 void Serveur::readServeur()

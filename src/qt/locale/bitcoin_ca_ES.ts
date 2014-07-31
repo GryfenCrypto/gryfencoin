@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About MaiaCoin</source>
-        <translation>Sobre MaiaCoin</translation>
+        <source>About GryfenCoin</source>
+        <translation>Sobre GryfenCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;MaiaCoin&lt;/b&gt; version</source>
-        <translation>versió &lt;b&gt;MaiaCoin&lt;/b&gt;</translation>
+        <source>&lt;b&gt;GryfenCoin&lt;/b&gt; version</source>
+        <translation>versió &lt;b&gt;GryfenCoin&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The MaiaCoin developers</source>
+Copyright © 2014 The GryfenCoin developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The MaiaCoin developers</translation>
+Copyright © 2014 The GryfenCoin developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -60,8 +60,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your MaiaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Aquestes són les teves adreces de MaiaCoin per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
+        <source>These are your GryfenCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Aquestes són les teves adreces de GryfenCoin per rebre els pagaments. És possible que vulgueu donar una diferent a cada remitent per a poder realitzar un seguiment de qui li está pagant.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -75,8 +75,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a MaiaCoin address</source>
-        <translation>Signar un missatge per demostrar que és propietari d&apos;una adreça MaiaCoin</translation>
+        <source>Sign a message to prove you own a GryfenCoin address</source>
+        <translation>Signar un missatge per demostrar que és propietari d&apos;una adreça GryfenCoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -90,8 +90,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified MaiaCoin address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça MaiaCoin especificada.</translation>
+        <source>Verify a message to ensure it was signed with a specified GryfenCoin address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb una adreça GryfenCoin especificada.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -258,8 +258,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>MaiaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>MaiaCoin tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació de la seva cartera no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
+        <source>GryfenCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>GryfenCoin tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació de la seva cartera no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -372,8 +372,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+6"/>
-        <source>Show information about MaiaCoin</source>
-        <translation>Mostra informació sobre MaiaCoin</translation>
+        <source>Show information about GryfenCoin</source>
+        <translation>Mostra informació sobre GryfenCoin</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -422,13 +422,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-64"/>
-        <source>Send coins to a MaiaCoin address</source>
-        <translation>Enviar monedes a una adreça MaiaCoin</translation>
+        <source>Send coins to a GryfenCoin address</source>
+        <translation>Enviar monedes a una adreça GryfenCoin</translation>
     </message>
     <message>
         <location line="+47"/>
-        <source>Modify configuration options for MaiaCoin</source>
-        <translation>Modificar les opcions de configuració per a MaiaCoin</translation>
+        <source>Modify configuration options for GryfenCoin</source>
+        <translation>Modificar les opcions de configuració per a GryfenCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -467,8 +467,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-202"/>
-        <source>MaiaCoin</source>
-        <translation>MaiaCoin</translation>
+        <source>GryfenCoin</source>
+        <translation>GryfenCoin</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -477,8 +477,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+180"/>
-        <source>&amp;About MaiaCoin</source>
-        <translation>&amp;Sobre MaiaCoin</translation>
+        <source>&amp;About GryfenCoin</source>
+        <translation>&amp;Sobre GryfenCoin</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -534,13 +534,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>MaiaCoin client</source>
-        <translation>Client MaiaCoin</translation>
+        <source>GryfenCoin client</source>
+        <translation>Client GryfenCoin</translation>
     </message>
     <message numerus="yes">
         <location line="+75"/>
-        <source>%n active connection(s) to MaiaCoin network</source>
-        <translation><numerusform>%n conexió activa a la xarxa MaiaCoin</numerusform><numerusform>%n conexions actives a la xarxa MaiaCoin</numerusform></translation>
+        <source>%n active connection(s) to GryfenCoin network</source>
+        <translation><numerusform>%n conexió activa a la xarxa GryfenCoin</numerusform><numerusform>%n conexions actives a la xarxa GryfenCoin</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -579,13 +579,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-312"/>
-        <source>About MaiaCoin card</source>
-        <translation>Sobre la tarjeta MaiaCoin</translation>
+        <source>About GryfenCoin card</source>
+        <translation>Sobre la tarjeta GryfenCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about MaiaCoin card</source>
-        <translation>Mostra informació sobre la tarjeta MaiaCoin</translation>
+        <source>Show information about GryfenCoin card</source>
+        <translation>Mostra informació sobre la tarjeta GryfenCoin</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -660,8 +660,8 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid MaiaCoin address or malformed URI parameters.</source>
-        <translation>l&apos;URI no es pot analitzar! Això pot ser causat per una adreça MaiaCoin no vàlida o paràmetres URI malformats.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid GryfenCoin address or malformed URI parameters.</source>
+        <translation>l&apos;URI no es pot analitzar! Això pot ser causat per una adreça GryfenCoin no vàlida o paràmetres URI malformats.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -720,8 +720,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. MaiaCoin can no longer continue safely and will quit.</source>
-        <translation>S&apos;ha produït un error fatal. MaiaCoin ja no pot continuar de forma segura i es tancarà.</translation>
+        <source>A fatal error occurred. GryfenCoin can no longer continue safely and will quit.</source>
+        <translation>S&apos;ha produït un error fatal. GryfenCoin ja no pot continuar de forma segura i es tancarà.</translation>
     </message>
 </context>
 <context>
@@ -1054,8 +1054,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid MaiaCoin address.</source>
-        <translation>La direcció introduïda &quot;%1&quot; no és una adreça MaiaCoin vàlida.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid GryfenCoin address.</source>
+        <translation>La direcció introduïda &quot;%1&quot; no és una adreça GryfenCoin vàlida.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1073,8 +1073,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>MaiaCoin-Qt</source>
-        <translation>MaiaCoin-Qt</translation>
+        <source>GryfenCoin-Qt</source>
+        <translation>GryfenCoin-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1146,13 +1146,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start MaiaCoin after logging in to the system.</source>
-        <translation>Inicia automàticament MaiaCoin després d&apos;entrar en el sistema.</translation>
+        <source>Automatically start GryfenCoin after logging in to the system.</source>
+        <translation>Inicia automàticament GryfenCoin després d&apos;entrar en el sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start MaiaCoin on system login</source>
-        <translation>&amp;Iniciar MaiaCoin amb l&apos;inici de sessió</translation>
+        <source>&amp;Start GryfenCoin on system login</source>
+        <translation>&amp;Iniciar GryfenCoin amb l&apos;inici de sessió</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1171,8 +1171,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the MaiaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Obrir automàticament el port de client MaiaCoin en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
+        <source>Automatically open the GryfenCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Obrir automàticament el port de client GryfenCoin en el router. Això només funciona quan el router és compatible amb UPnP i està habilitat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1181,8 +1181,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the MaiaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connecteu-vos a la xarxa MaiaCoin través d&apos;un proxy SOCKS (per exemple, quan es connecta a través de Tor).</translation>
+        <source>Connect to the GryfenCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connecteu-vos a la xarxa GryfenCoin través d&apos;un proxy SOCKS (per exemple, quan es connecta a través de Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1256,8 +1256,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting MaiaCoin.</source>
-        <translation>L&apos;idioma de la interfície d&apos;usuari es pot configurar aquí. Aquesta configuració s&apos;aplicarà després de reiniciar MaiaCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting GryfenCoin.</source>
+        <translation>L&apos;idioma de la interfície d&apos;usuari es pot configurar aquí. Aquesta configuració s&apos;aplicarà després de reiniciar GryfenCoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1271,8 +1271,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show MaiaCoin addresses in the transaction list or not.</source>
-        <translation>Per mostrar MaiaCoin adreces a la llista de transaccions o no.</translation>
+        <source>Whether to show GryfenCoin addresses in the transaction list or not.</source>
+        <translation>Per mostrar GryfenCoin adreces a la llista de transaccions o no.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1318,8 +1318,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting MaiaCoin.</source>
-        <translation>Aquesta configuració s&apos;aplicarà després de reiniciar MaiaCoin.</translation>
+        <source>This setting will take effect after restarting GryfenCoin.</source>
+        <translation>Aquesta configuració s&apos;aplicarà després de reiniciar GryfenCoin.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1337,8 +1337,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MaiaCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>La informació mostrada pot estar fora de data. La seva cartera es sincronitza automàticament amb la xarxa MaiaCoin després d&apos;establir una connexió, però aquest procés no s&apos;ha completat encara.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GryfenCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>La informació mostrada pot estar fora de data. La seva cartera es sincronitza automàticament amb la xarxa GryfenCoin després d&apos;establir una connexió, però aquest procés no s&apos;ha completat encara.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1553,8 +1553,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the MaiaCoin-Qt help message to get a list with possible MaiaCoin command-line options.</source>
-        <translation>Mostra el missatge d&apos;ajuda de MaiaCoin-Qt per obtenir una llista amb les possibles opcions de línia d&apos;ordres MaiaCoin.</translation>
+        <source>Show the GryfenCoin-Qt help message to get a list with possible GryfenCoin command-line options.</source>
+        <translation>Mostra el missatge d&apos;ajuda de GryfenCoin-Qt per obtenir una llista amb les possibles opcions de línia d&apos;ordres GryfenCoin.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1573,13 +1573,13 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>MaiaCoin - Debug window</source>
-        <translation>MaiaCoin - Finestra Depuració</translation>
+        <source>GryfenCoin - Debug window</source>
+        <translation>GryfenCoin - Finestra Depuració</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>MaiaCoin Core</source>
-        <translation>Nucli MaiaCoin</translation>
+        <source>GryfenCoin Core</source>
+        <translation>Nucli GryfenCoin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1588,8 +1588,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the MaiaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Obriu el fitxer de registre de depuració MaiaCoin des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
+        <source>Open the GryfenCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Obriu el fitxer de registre de depuració GryfenCoin des del directori de dades actual. Això pot trigar uns segons en els arxius de registre de grans dimensions.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1598,8 +1598,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the MaiaCoin RPC console.</source>
-        <translation>Benvingut a la consola RPC de MaiaCoin.</translation>
+        <source>Welcome to the GryfenCoin RPC console.</source>
+        <translation>Benvingut a la consola RPC de GryfenCoin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1672,8 +1672,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 MAIA</source>
-        <translation>123.456 MAIA {0.00 ?}</translation>
+        <source>0.00 GFC</source>
+        <translation>123.456 GFC {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1742,8 +1742,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 MAIA</source>
-        <translation>123.456 MAIA</translation>
+        <source>123.456 GFC</source>
+        <translation>123.456 GFC</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1757,8 +1757,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
-        <translation>Introdueix una adreça MaiaCoin (p.ex. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Introdueix una adreça GryfenCoin (p.ex. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1857,8 +1857,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid MaiaCoin address</source>
-        <translation>ADVERTÈNCIA: Direcció MaiaCoin invàlida</translation>
+        <source>WARNING: Invalid GryfenCoin address</source>
+        <translation>ADVERTÈNCIA: Direcció GryfenCoin invàlida</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1931,8 +1931,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
-        <translation>Introdueix una adreça MaiaCoin (p.ex. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Introdueix una adreça GryfenCoin (p.ex. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
 </context>
 <context>
@@ -1992,8 +1992,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this MaiaCoin address</source>
-        <translation>Signar un missatge per demostrar que és propietari d&apos;aquesta adreça MaiaCoin</translation>
+        <source>Sign the message to prove you own this GryfenCoin address</source>
+        <translation>Signar un missatge per demostrar que és propietari d&apos;aquesta adreça GryfenCoin</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2024,8 +2024,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified MaiaCoin address</source>
-        <translation>Comproveu el missatge per assegurar-se que es va signar amb l&apos;adreça MaiaCoin especificada.</translation>
+        <source>Verify the message to ensure it was signed with the specified GryfenCoin address</source>
+        <translation>Comproveu el missatge per assegurar-se que es va signar amb l&apos;adreça GryfenCoin especificada.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2035,8 +2035,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
-        <translation>Introdueix una adreça MaiaCoin (p.ex. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <translation>Introdueix una adreça GryfenCoin (p.ex. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2045,8 +2045,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter MaiaCoin signature</source>
-        <translation>Introduïu la signatura MaiaCoin</translation>
+        <source>Enter GryfenCoin signature</source>
+        <translation>Introduïu la signatura GryfenCoin</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2616,8 +2616,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>MaiaCoin version</source>
-        <translation>versió MaiaCoin</translation>
+        <source>GryfenCoin version</source>
+        <translation>versió GryfenCoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2801,8 +2801,8 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong MaiaCoin will not work properly.</source>
-        <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni MaiaCoin no funcionarà correctament.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GryfenCoin will not work properly.</source>
+        <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni GryfenCoin no funcionarà correctament.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2997,7 +2997,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, ha d&apos;establir un rpcpassword al fitxer de configuració:
 %s
@@ -3008,7 +3008,7 @@ rpcpassword=%s
 El nom d&apos;usuari i contrasenya NO HA DE SER el mateix.
 Si no hi ha l&apos;arxiu, s&apos;ha de crear amb els permisos de només lectura per al propietari.
 També es recomana establir alertnotify per a que se li notifiquin els problemes;
-per exemple: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo.com
+per exemple: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3134,13 +3134,13 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  MaiaCoin is probably already running.</source>
-        <translation>No es pot obtenir un bloqueig en el directori de dades %s. MaiaCoin probablement ja estigui en funcionament.</translation>
+        <source>Cannot obtain a lock on data directory %s.  GryfenCoin is probably already running.</source>
+        <translation>No es pot obtenir un bloqueig en el directori de dades %s. GryfenCoin probablement ja estigui en funcionament.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>MaiaCoin</source>
-        <translation>MaiaCoin</translation>
+        <source>GryfenCoin</source>
+        <translation>GryfenCoin</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3174,13 +3174,13 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of MaiaCoin</source>
-        <translation>Error en carregar wallet.dat: La cartera requereix la versió més recent de MaiaCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of GryfenCoin</source>
+        <translation>Error en carregar wallet.dat: La cartera requereix la versió més recent de GryfenCoin</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart MaiaCoin to complete</source>
-        <translation>La cartera necessita ser reescrita: reiniciar MaiaCoin per completar</translation>
+        <source>Wallet needed to be rewritten: restart GryfenCoin to complete</source>
+        <translation>La cartera necessita ser reescrita: reiniciar GryfenCoin per completar</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3249,8 +3249,8 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. MaiaCoin is probably already running.</source>
-        <translation>No es pot enllaçar a %s en aquest equip. MaiaCoin probablement ja estigui en funcionament.</translation>
+        <source>Unable to bind to %s on this computer. GryfenCoin is probably already running.</source>
+        <translation>No es pot enllaçar a %s en aquest equip. GryfenCoin probablement ja estigui en funcionament.</translation>
     </message>
     <message>
         <location line="-97"/>

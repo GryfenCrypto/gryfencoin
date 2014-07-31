@@ -3,19 +3,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About MaiaCoin</source>
+        <source>About GryfenCoin</source>
         <translation>عن البلاك كوين</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;MaiaCoin&lt;/b&gt; version</source>
+        <source>&lt;b&gt;GryfenCoin&lt;/b&gt; version</source>
         <translation>جزء البلاك كوين</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The MaiaCoin developers</source>
+Copyright © 2014 The GryfenCoin developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -58,7 +58,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your MaiaCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your GryfenCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>هذه هي عناوين البلاك كوين لاستقبال الدفعات. يمكن أن تعطي عنوان مختلف لكل مرسل من اجل أن تتابع من يرسل لك.</translation>
     </message>
     <message>
@@ -73,7 +73,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a MaiaCoin address</source>
+        <source>Sign a message to prove you own a GryfenCoin address</source>
         <translation>التوقيع علي رسالة لاثبات بانك تملك عنوان البلاك كوين</translation>
     </message>
     <message>
@@ -88,7 +88,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified MaiaCoin address</source>
+        <source>Verify a message to ensure it was signed with a specified GryfenCoin address</source>
         <translation>تحقق من الرسالة لتثبت بانه تم توقيعه بعنوان بلاك كوين محدد</translation>
     </message>
     <message>
@@ -256,7 +256,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-58"/>
-        <source>MaiaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <source>GryfenCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>بلاك كوين</translation>
     </message>
     <message>
@@ -372,7 +372,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+6"/>
-        <source>Show information about MaiaCoin</source>
+        <source>Show information about GryfenCoin</source>
         <translation>اظهار المعلومات عن البلاك كوين</translation>
     </message>
     <message>
@@ -422,12 +422,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-64"/>
-        <source>Send coins to a MaiaCoin address</source>
+        <source>Send coins to a GryfenCoin address</source>
         <translation>ارسال البلاك كوين الي عنوان اخر</translation>
     </message>
     <message>
         <location line="+47"/>
-        <source>Modify configuration options for MaiaCoin</source>
+        <source>Modify configuration options for GryfenCoin</source>
         <translation>تعديل خيارات التكوين للبلاك كوين</translation>
     </message>
     <message>
@@ -467,7 +467,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-202"/>
-        <source>MaiaCoin</source>
+        <source>GryfenCoin</source>
         <translation>البلاك كوين</translation>
     </message>
     <message>
@@ -477,7 +477,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+180"/>
-        <source>&amp;About MaiaCoin</source>
+        <source>&amp;About GryfenCoin</source>
         <translation>عن البلاك كوين</translation>
     </message>
     <message>
@@ -534,12 +534,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>MaiaCoin client</source>
+        <source>GryfenCoin client</source>
         <translation>برنامج البلاك كوين</translation>
     </message>
     <message numerus="yes">
         <location line="+75"/>
-        <source>%n active connection(s) to MaiaCoin network</source>
+        <source>%n active connection(s) to GryfenCoin network</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
@@ -579,12 +579,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-312"/>
-        <source>About MaiaCoin card</source>
+        <source>About GryfenCoin card</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Show information about MaiaCoin card</source>
+        <source>Show information about GryfenCoin card</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -660,7 +660,7 @@ Address: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid MaiaCoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid GryfenCoin address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -720,7 +720,7 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. MaiaCoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. GryfenCoin can no longer continue safely and will quit.</source>
         <translation>خطا فادح! بلاك كوين لا يمكن أن يستمر جاري الاغلاق</translation>
     </message>
 </context>
@@ -1041,7 +1041,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid MaiaCoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid GryfenCoin address.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1060,7 +1060,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>MaiaCoin-Qt</source>
+        <source>GryfenCoin-Qt</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1133,12 +1133,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start MaiaCoin after logging in to the system.</source>
+        <source>Automatically start GryfenCoin after logging in to the system.</source>
         <translation>بد البلاك كوين تلقائي عند الدخول الي الجهاز</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start MaiaCoin on system login</source>
+        <source>&amp;Start GryfenCoin on system login</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1158,7 +1158,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the MaiaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the GryfenCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1168,7 +1168,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the MaiaCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the GryfenCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1243,7 +1243,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting MaiaCoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting GryfenCoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1258,7 +1258,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show MaiaCoin addresses in the transaction list or not.</source>
+        <source>Whether to show GryfenCoin addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1305,7 +1305,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting MaiaCoin.</source>
+        <source>This setting will take effect after restarting GryfenCoin.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1324,7 +1324,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the MaiaCoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the GryfenCoin network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1540,7 +1540,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the MaiaCoin-Qt help message to get a list with possible MaiaCoin command-line options.</source>
+        <source>Show the GryfenCoin-Qt help message to get a list with possible GryfenCoin command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1560,12 +1560,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>MaiaCoin - Debug window</source>
+        <source>GryfenCoin - Debug window</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+25"/>
-        <source>MaiaCoin Core</source>
+        <source>GryfenCoin Core</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1575,7 +1575,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the MaiaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the GryfenCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1585,7 +1585,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the MaiaCoin RPC console.</source>
+        <source>Welcome to the GryfenCoin RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1659,7 +1659,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 MAIA</source>
+        <source>0.00 GFC</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1729,7 +1729,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 MAIA</source>
+        <source>123.456 GFC</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1744,7 +1744,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1844,7 +1844,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid MaiaCoin address</source>
+        <source>WARNING: Invalid GryfenCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1918,7 +1918,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
         <translation>ادخال عنوان البلاك كوين (مثلا MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</translation>
     </message>
 </context>
@@ -1979,7 +1979,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this MaiaCoin address</source>
+        <source>Sign the message to prove you own this GryfenCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2011,7 +2011,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified MaiaCoin address</source>
+        <source>Verify the message to ensure it was signed with the specified GryfenCoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2022,7 +2022,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a MaiaCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
+        <source>Enter a GryfenCoin address (e.g. MN8fd1QR5TXecqnFJhBY959CMKGy8t37oU)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2032,7 +2032,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter MaiaCoin signature</source>
+        <source>Enter GryfenCoin signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2603,7 +2603,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>MaiaCoin version</source>
+        <source>GryfenCoin version</source>
         <translation>جزع البلاك كوين</translation>
     </message>
     <message>
@@ -2788,7 +2788,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong MaiaCoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong GryfenCoin will not work properly.</source>
         <translation>تحذير : تأكد من ساعة وتاريخ الكمبيوتر! اذا ساعة غير صحيحة بلاك كوين لن يعمل بشكل صحيح</translation>
     </message>
     <message>
@@ -2983,7 +2983,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -3109,12 +3109,12 @@ for example: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  MaiaCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  GryfenCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="-98"/>
-        <source>MaiaCoin</source>
+        <source>GryfenCoin</source>
         <translation>البلاك كوين</translation>
     </message>
     <message>
@@ -3149,12 +3149,12 @@ for example: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of MaiaCoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of GryfenCoin</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart MaiaCoin to complete</source>
+        <source>Wallet needed to be rewritten: restart GryfenCoin to complete</source>
         <translation>المحفظة يجب أن يعاد كتابته : أعد البلاك كوين لتكتمل</translation>
     </message>
     <message>
@@ -3224,7 +3224,7 @@ for example: alertnotify=echo %%s | mail -s &quot;MaiaCoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. MaiaCoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. GryfenCoin is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
