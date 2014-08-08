@@ -2576,7 +2576,7 @@ bool LoadBlockIndex(bool fAllowNew)
         if (!fAllowNew)
             return false;
 
-        const char* pszTimestamp = "x15 GryfenCoin to the stars!";
+        const char* pszTimestamp = "x28561 GryfenCoin rulez!";
         CTransaction txNew;
         txNew.nTime = 1403803007;
         txNew.vin.resize(1);
