@@ -2635,8 +2635,8 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or maiacoind</source>
-        <translation>Verstuur commando naar -server of maiacoind</translation>
+        <source>Send command to -server or gryfencoind</source>
+        <translation>Verstuur commando naar -server of gryfencoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2655,13 +2655,13 @@ Dit betekend dat een fee van %2 is vereist.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: maiacoin.conf)</source>
-        <translation>Selecteer configuratie bestand (standaard: maiacoin.conf)</translation>
+        <source>Specify configuration file (default: gryfencoin.conf)</source>
+        <translation>Selecteer configuratie bestand (standaard: gryfencoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: maiacoind.pid)</source>
-        <translation>Selecteer pid bestand (standaard: maiacoin.conf)</translation>
+        <source>Specify pid file (default: gryfencoind.pid)</source>
+        <translation>Selecteer pid bestand (standaard: gryfencoin.conf)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -3000,7 +3000,7 @@ Dit betekend dat een fee van %2 is vereist.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3011,7 +3011,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@f
         <translation>%s, u moet een rpcpassword instellen in het configuratiebestand: 
 %s 
 Het wordt aanbevolen de volgende willekeurig wachtwoord gebruiken: 
-rpcuser = maiacoinrpc 
+rpcuser = gryfencoinrpc 
 rpcpassword = %s 
 (je hoeft niet dit wachtwoord te onthouden) 
 De gebruikersnaam en het wachtwoord MAG NIET hetzelfde zijn. 

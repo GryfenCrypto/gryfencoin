@@ -2635,8 +2635,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or maiacoind</source>
-        <translation>Trimite comanda catre server sau maiacoind</translation>
+        <source>Send command to -server or gryfencoind</source>
+        <translation>Trimite comanda catre server sau gryfencoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2655,13 +2655,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: maiacoin.conf)</source>
-        <translation>Specifica fisier de configurare(implicit: maiacoin.conf)</translation>
+        <source>Specify configuration file (default: gryfencoin.conf)</source>
+        <translation>Specifica fisier de configurare(implicit: gryfencoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: maiacoind.pid)</source>
-        <translation>Speficica fisier pid(implicit: maiacoin.pid)</translation>
+        <source>Specify pid file (default: gryfencoind.pid)</source>
+        <translation>Speficica fisier pid(implicit: gryfencoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -3000,7 +3000,7 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3009,7 +3009,7 @@ It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, trebuie să configurați o parolă rpc în fișierul de configurare: %s
-Este recomandat să folosiți următoarea parolă generată aleator: rpcuser=maiacoinrpc
+Este recomandat să folosiți următoarea parolă generată aleator: rpcuser=gryfencoinrpc
 rpcpassword=%s
 (nu trebuie să țineți minte această parolă)
 Username-ul și parola NU TREBUIE să fie aceleași.

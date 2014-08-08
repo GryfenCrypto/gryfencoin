@@ -2633,7 +2633,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or maiacoind</source>
+        <source>Send command to -server or gryfencoind</source>
         <translation>Pošlji ukaz na -server ali blackoind</translation>
     </message>
     <message>
@@ -2653,13 +2653,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: maiacoin.conf)</source>
-        <translation>Določi konfiguracijsko datoteko (privzeto: maiacoin.conf)</translation>
+        <source>Specify configuration file (default: gryfencoin.conf)</source>
+        <translation>Določi konfiguracijsko datoteko (privzeto: gryfencoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: maiacoind.pid)</source>
-        <translation>Določi pid datoteko (privzeto: maiacoin.pid)</translation>
+        <source>Specify pid file (default: gryfencoind.pid)</source>
+        <translation>Določi pid datoteko (privzeto: gryfencoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2998,7 +2998,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3009,7 +3009,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@f
         <translation>%s, nastaviti morate rpcgeslo v konfiguracijski datoteki: 
  %s
 Priporočeno je, da uporabite naslednje naključno geslo:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (tega gesla si vam ni potrebno zapomniti)
 Uporabniško ime in geslo NE SMETA biti ista. 

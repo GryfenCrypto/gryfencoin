@@ -2636,8 +2636,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or maiacoind</source>
-        <translation>Skicka kommando till -server eller maiacoind</translation>
+        <source>Send command to -server or gryfencoind</source>
+        <translation>Skicka kommando till -server eller gryfencoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2656,13 +2656,13 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: maiacoin.conf)</source>
-        <translation>Ange konfigurationsfilen (standard: maiacoin.conf)</translation>
+        <source>Specify configuration file (default: gryfencoin.conf)</source>
+        <translation>Ange konfigurationsfilen (standard: gryfencoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: maiacoind.pid)</source>
-        <translation>Ange pid filen (standard maiacoind.pid)</translation>
+        <source>Specify pid file (default: gryfencoind.pid)</source>
+        <translation>Ange pid filen (standard gryfencoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -3001,7 +3001,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3012,7 +3012,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@f
         <translation>%s, du måste sätta rpcpassword i konfigurationsfilen:
  %s
 Det är rekommenderat att du använder följande slumpmässiga lösenord:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (du behöver inte komma ihåg detta lösenord)
 Användarnamnet och lösenordet FÅR INTE vara samma.

@@ -2633,8 +2633,8 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or maiacoind</source>
-        <translation>Syötä komento kohteeseen -server tai maiacoind</translation>
+        <source>Send command to -server or gryfencoind</source>
+        <translation>Syötä komento kohteeseen -server tai gryfencoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2653,13 +2653,13 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: maiacoin.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: maiacoin.conf)</translation>
+        <source>Specify configuration file (default: gryfencoin.conf)</source>
+        <translation>Määritä asetustiedosto (oletus: gryfencoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: maiacoind.pid)</source>
-        <translation>Määritä prosessitiedosto (oletus: maiacoin.pid)</translation>
+        <source>Specify pid file (default: gryfencoind.pid)</source>
+        <translation>Määritä prosessitiedosto (oletus: gryfencoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2998,7 +2998,7 @@ Tämä tarkoittaa, että ainakin %2 rahansiirtopalkkio tarvitaan.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3009,7 +3009,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@f
         <translation>%s, sinun on asetettava rpcpassword asetustiedostoon:
 %s
 On suositeltavaa, että käytät seuraavaa arvottua salasanaa:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (Sinun ei tarvitse muistaa tätä salasanaa)
 Käyttäjänimen ja salasanan EI TULE OLLA SAMOJA.

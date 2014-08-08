@@ -82,7 +82,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     rpcConsole(0)
 {
     setFixedSize(970, 550);
-    setWindowTitle(tr("M")+("a")+("i")+("a")+("C")+("o")+("i")+("n") + " - " + tr("N")+("e")+("x")+("t")+(" ")+("G")+("e")+("n")+("e")+("r")+("a")+("t")+("i")+("o")+("n ")+("Wallet"));
+    setWindowTitle(tr("G")+("y")+("f")+("e")+("n")+("C")+("o")+("i")+("n") + " - " + tr("N")+("e")+("x")+("t")+(" ")+("G")+("e")+("n")+("e")+("r")+("a")+("t")+("i")+("o")+("n ")+("Wallet"));
 
 
 #ifndef Q_OS_MAC

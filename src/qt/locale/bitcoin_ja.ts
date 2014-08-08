@@ -2634,8 +2634,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or maiacoind</source>
-        <translation>-server か maiacoindへコマンドを送る。</translation>
+        <source>Send command to -server or gryfencoind</source>
+        <translation>-server か gryfencoindへコマンドを送る。</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2654,13 +2654,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: maiacoin.conf)</source>
-        <translation>設定ファイルを特定する (デファルト: maiacoin.conf)</translation>
+        <source>Specify configuration file (default: gryfencoin.conf)</source>
+        <translation>設定ファイルを特定する (デファルト: gryfencoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: maiacoind.pid)</source>
-        <translation>pid ファイルを特定する (デフォルト: maiacoind.pid)</translation>
+        <source>Specify pid file (default: gryfencoind.pid)</source>
+        <translation>pid ファイルを特定する (デフォルト: gryfencoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2999,7 +2999,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3010,7 +3010,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@f
         <translation>%s, 設定ファイル：%sでrpcpasswordのパスワードを入力しなければならい
 
 このランダムパスワードのおすすめです：
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (このパサワードを覚えなくても大丈夫です)
 ユーザ名とパスワードは同じであってはなりません。

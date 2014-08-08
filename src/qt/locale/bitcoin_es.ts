@@ -2638,8 +2638,8 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or maiacoind</source>
-        <translation>Envía un comando a -server o maiacoind</translation>
+        <source>Send command to -server or gryfencoind</source>
+        <translation>Envía un comando a -server o gryfencoind</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2661,13 +2661,13 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: maiacoin.conf)</source>
-        <translation>Especifica un archivo de configuración (por defecto: maiacoin.conf)</translation>
+        <source>Specify configuration file (default: gryfencoin.conf)</source>
+        <translation>Especifica un archivo de configuración (por defecto: gryfencoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: maiacoind.pid)</source>
-        <translation>Especifica un archivo pid (por defecto: maiacoind.pid)</translation>
+        <source>Specify pid file (default: gryfencoind.pid)</source>
+        <translation>Especifica un archivo pid (por defecto: gryfencoind.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -3010,7 +3010,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -3021,7 +3021,7 @@ for example: alertnotify=echo %%s | mail -s &quot;GryfenCoin Alert&quot; admin@f
         <translation>%s, debe establecer un rpcpassword en el fichero de configuración:
 %s
 Se recomienda utilizar la siguiente contraseña aleatoria:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (no necesita recordar este password)
 El nombre de usuario y contraseña no debe ser el mismo.

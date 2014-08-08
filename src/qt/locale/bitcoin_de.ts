@@ -2618,8 +2618,8 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or maiacoind</source>
-        <translation>Kommando versenden an -server oder maiacoind </translation>
+        <source>Send command to -server or gryfencoind</source>
+        <translation>Kommando versenden an -server oder gryfencoind </translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2638,13 +2638,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: maiacoin.conf)</source>
-        <translation>Konfigurationsdatei angeben (Standard: maiacoin.conf)</translation>
+        <source>Specify configuration file (default: gryfencoin.conf)</source>
+        <translation>Konfigurationsdatei angeben (Standard: gryfencoin.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: maiacoind.pid)</source>
-        <translation>PID Datei angeben (Standard: maiacoin.pid)</translation>
+        <source>Specify pid file (default: gryfencoind.pid)</source>
+        <translation>PID Datei angeben (Standard: gryfencoin.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2982,7 +2982,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=maiacoinrpc
+rpcuser=gryfencoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
