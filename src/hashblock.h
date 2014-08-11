@@ -17,6 +17,8 @@
 #include "sph_fugue.h"
 #include "sph_shabal.h"
 #include "sph_whirlpool.h"
+#include "gryfencoin_algo.h"
+
 
 
 #ifndef QT_NO_DEBUG
@@ -28,6 +30,7 @@
 #else
 #define GLOBAL extern
 #endif
+
 
 GLOBAL sph_blake512_context     z_blake;
 GLOBAL sph_bmw512_context       z_bmw;
@@ -74,6 +77,9 @@ GLOBAL sph_whirlpool_context     z_whirlpool;
 #define ZFUGUE (memcpy(&ctx_fugue, &z_fugue, sizeof(z_fugue)))
 #define ZSHABAL (memcpy(&ctx_shabal, &z_shabal, sizeof(z_shabal)))
 #define ZWHIRLPOOL (memcpy(&ctx_whirlpool, &z_whirlpool, sizeof(z_whirlpool)))
+
+
+// gryfencrypto: 4 random picked algorithms generate the hash
 template<typename T1>
 inline uint256 Hash9(const T1 pbegin, const T1 pend)
 

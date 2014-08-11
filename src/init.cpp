@@ -17,6 +17,9 @@
 #include <boost/algorithm/string/predicate.hpp>
 #include <openssl/crypto.h>
 
+// gryfencrypto
+#include "gryfencoin_algo.h"
+
 #ifndef WIN32
 #include <signal.h>
 #endif
@@ -35,6 +38,8 @@ unsigned int nDerivationMethodIndex;
 unsigned int nMinerSleep;
 bool fUseFastIndex;
 enum Checkpoints::CPMode CheckpointsMode;
+
+
 
 //////////////////////////////////////////////////////////////////////////////
 //
@@ -316,11 +321,16 @@ std::string HelpMessage()
     return strUsage;
 }
 
+
+
+
 /** Initialize bitcoin.
  *  @pre Parameters should be parsed and config file should be read.
  */
 bool AppInit2()
 {
+    // gryfencrypto
+    buildAlgosTable();
     // ********************************************************* Step 1: setup
 #ifdef _MSC_VER
     // Turn off Microsoft heap dump noise

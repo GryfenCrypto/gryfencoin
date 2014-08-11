@@ -84,6 +84,8 @@ int64_t nMinimumInputValue = 0;
 
 extern enum Checkpoints::CPMode CheckpointsMode;
 
+
+
 //////////////////////////////////////////////////////////////////////////////
 //
 // dispatching functions
