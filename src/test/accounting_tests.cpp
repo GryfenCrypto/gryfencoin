@@ -5,11 +5,13 @@
 #include "init.h"
 #include "wallet.h"
 #include "walletdb.h"
+#include "uint256_t.h"
+
 
 BOOST_AUTO_TEST_SUITE(accounting_tests)
 
 static void
-GetResults(CWalletDB& walletdb, std::map<int64, CAccountingEntry>& results)
+GetResults(CWalletDB& walletdb, std::map<int64_t, CAccountingEntry>& results)
 {
     std::list<CAccountingEntry> aes;
 
@@ -28,7 +30,7 @@ BOOST_AUTO_TEST_CASE(acc_orderupgrade)
     std::vector<CWalletTx*> vpwtx;
     CWalletTx wtx;
     CAccountingEntry ae;
-    std::map<int64, CAccountingEntry> results;
+    std::map<int64_t, CAccountingEntry> results;
 
     ae.strAccount = "";
     ae.nCreditDebit = 1;
