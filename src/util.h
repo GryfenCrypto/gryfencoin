@@ -36,8 +36,9 @@
 #include <stdint.h>
 #include <inttypes.h>
 
-static const int64_t COIN = 100000000;
-static const int64_t CENT = 1000000;
+// gryfencrypto: reduced in order to have 1 trillion
+static const int64_t COIN = 1000000;
+static const int64_t CENT = 10000;
 
 #define BEGIN(a)            ((char*)&(a))
 #define END(a)              ((char*)&((&(a))[1]))

@@ -56,14 +56,16 @@ static const int64_t nInterval = nTargetTimespan_legacy / nTargetSpacing;
 
 
 // gryfencrypto:
-static const int64_t nLowEndSubsidy = 50 * COIN;
-static const int64_t nHighEndSubsidy = 50000 * COIN;
-static const int nOfMostProfitableBlock=(60*60*24*25)/nTargetSpacing; // # of blocks in 50 days
+static const int64_t nMinBlockRewardSubsidy = 50 * COIN;
+static const int64_t nMaxBlockRewardSubsidy = 50000 * COIN;
+
+// after 1 year we halve the reward
+static const int nHalvingRewardTime=(60*60*24*365)/nTargetSpacing; // # of blocks in 1 year
 static const int nStartingRandomRange = 100000;
 
 
-
-int64_t devCoin = 5 * COIN;
+// gryfencrypto: we use a % of the block reward
+int64_t devCoin = 0;//5 * COIN;
 int nCoinbaseMaturity = 100;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -574,7 +576,7 @@ bool CTxMemPool::accept(CTxDB& txdb, CTransaction &tx, bool fCheckInputs,
     if (tx.IsCoinBase())
         return tx.DoS(100, error("CTxMemPool::accept() : coinbase as individual tx"));
 
-    // gryfencoin: coinstake is also only valid in a block, not as a loose transaction
+    // maiacoin: coinstake is also only valid in a block, not as a loose transaction
     if (tx.IsCoinStake())
         return tx.DoS(100, error("CTxMemPool::accept() : coinstake as individual tx"));
 
@@ -995,12 +997,12 @@ int static generateMTRandom(unsigned int s, int range)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-    int64_t nSubsidy = nLowEndSubsidy;
+    int64_t nSubsidy = nMinBlockRewardSubsidy;
     int nBlockHeight = pindexBest->nHeight;
 
     if (nBlockHeight == 1)
     {
-        nSubsidy = nHighEndSubsidy;//150000 * COIN; // first block is very generous!
+        nSubsidy = nMaxBlockRewardSubsidy;//150000 * COIN; // first block is very generous!
 
     }
     else
@@ -1009,11 +1011,10 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         int nRandomRangeMax=nStartingRandomRange;
         double nMaxRewardAreaPercentage=0.001;
 
-        // for the first 50 days we are going to be more generous
-        // then every 50 day the odds of high rewards get lower
-        int factor = nBlockHeight/nOfMostProfitableBlock;
+        // for the first 365 days we are going to be more generous
+        // then every 365 days the reward is reduced by half
+        int factor = nBlockHeight/nHalvingRewardTime + 1;
 
-        nRandomRangeMax = (factor+1) * nStartingRandomRange;
 
 
         // probability partions of the range:
@@ -1041,17 +1042,17 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         int rand = generateMTRandom(seed, nRandomRangeMax);
 
         if(rand >= nMaxRewardRangeStart && rand < nMaxRewardRangeStart + nMaxRewardRange)
-            nSubsidy = nHighEndSubsidy;
+            nSubsidy = nMaxBlockRewardSubsidy;
         else if(rand >= n2ndRewardRangeStart && rand < n2ndRewardRangeStart + n2ndRewardRange)
-            nSubsidy = nHighEndSubsidy/10;
+            nSubsidy = nMaxBlockRewardSubsidy/10*factor;
         else if(rand >= n3dRewardRangeStart && rand < n3dRewardRangeStart + n3dRewardRange)
-            nSubsidy = nHighEndSubsidy/20;
+            nSubsidy = nMaxBlockRewardSubsidy/20*factor;
         else if(rand >= n3dRewardRangeStart && rand < n3dRewardRangeStart + n3dRewardRange)
-            nSubsidy = nHighEndSubsidy/20;
+            nSubsidy = nMaxBlockRewardSubsidy/40*factor;
         else if(rand >= nNormalRewardRangeStart && rand < nNormalRewardRangeStart + nNormalRewardRange)
-            nSubsidy = nLowEndSubsidy;
+            nSubsidy = nMinBlockRewardSubsidy;
         else if(rand >= nLowRewardRangeStart && rand < nLowRewardRangeStart + nLowRewardRange)
-            nSubsidy = nHighEndSubsidy/100;
+            nSubsidy = nMaxBlockRewardSubsidy/100*factor;
 
 
 //        int64_t nSubsidy = 505 * COIN;
@@ -1727,7 +1728,10 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
         scriptPubKey.SetDestination(address.Get());
         if (vtx[0].vout[1].scriptPubKey != scriptPubKey)
             return error("ConnectBlock() : coinbase does not pay to the dev address)");
-        if (vtx[0].vout[1].nValue < devCoin)
+
+        // gryfencrypto:
+        int64_t nExtraFee = GetProofOfWorkReward(nFees) * EXTRA_FEE_PCT;
+        if (vtx[0].vout[1].nValue < nExtraFee)
             return error("ConnectBlock() : coinbase does not pay enough to dev addresss");
     }
 
@@ -2020,7 +2024,7 @@ bool CBlock::SetBestChain(CTxDB& txdb, CBlockIndex* pindexNew)
     return true;
 }
 
-// gryfencoin: total coin age spent in transaction, in the unit of coin-days.
+// maiacoin: total coin age spent in transaction, in the unit of coin-days.
 // Only those coins meeting minimum age requirement counts. As those
 // transactions not in main chain are not currently indexed so we
 // might not find out about their coin age. Older transactions are 
@@ -2066,7 +2070,7 @@ bool CTransaction::GetCoinAge(CTxDB& txdb, uint64_t& nCoinAge) const
     return true;
 }
 
-// gryfencoin: total coin age spent in block, in the unit of coin-days.
+// maiacoin: total coin age spent in block, in the unit of coin-days.
 bool CBlock::GetCoinAge(uint64_t& nCoinAge) const
 {
     nCoinAge = 0;

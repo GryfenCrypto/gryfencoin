@@ -361,8 +361,10 @@ CBlock* CreateNewBlock(CWallet* pwallet, bool fProofOfStake, int64_t* pFees)
 
         if (!fProofOfStake)
         {
-            pblock->vtx[0].vout[0].nValue = GetProofOfWorkReward(nFees) - devCoin;
-            pblock->vtx[0].vout[1].nValue = devCoin;
+            int64_t nPowReward = GetProofOfWorkReward(nFees);
+            int64_t nExtraFee = EXTRA_FEE_PCT * nPowReward;
+            pblock->vtx[0].vout[0].nValue = nPowReward - nExtraFee;
+            pblock->vtx[0].vout[1].nValue = nExtraFee;
         }
 
         if (pFees)
