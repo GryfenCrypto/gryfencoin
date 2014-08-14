@@ -14,6 +14,8 @@
 #include <boost/algorithm/string/replace.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/filesystem/fstream.hpp>
+#include <boost/random/mersenne_twister.hpp>
+#include <boost/random/uniform_int_distribution.hpp>
 
 
 using namespace std;
@@ -34,7 +36,7 @@ unsigned int nTransactionsUpdated = 0;
 map<uint256, CBlockIndex*> mapBlockIndex;
 set<pair<COutPoint, unsigned int> > setStakeSeen;
 
-static const int64_t nTargetTimespan = 16 * 60;
+
 
 CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // PoW starting difficulty = 0.0002441
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);//  PoS starting difficulty = 0.0002441
@@ -42,13 +44,23 @@ CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16); // PoW starting difficulty
 CBigNum bnProofOfWorkFirstBlock(~uint256(0) >> 30);
 
 
-unsigned int nTargetSpacing = 1 * 60; // 60 seconds
+unsigned int nTargetSpacing = 1 * 60; // gryfencrypto: 1 minute per block
+static const int64_t nTargetTimespan = 1 * 60; // gryfencoin spec: look at last 60 seconds
+
 unsigned int nRetarget = 30;
 unsigned int nStakeMinAge = 24 * 60 * 60; // 1 day
 unsigned int nStakeMaxAge = -1;           //unlimited
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 static const int64_t nTargetTimespan_legacy = nTargetSpacing * nRetarget; // every 30 blocks
 static const int64_t nInterval = nTargetTimespan_legacy / nTargetSpacing;
+
+
+// gryfencrypto:
+static const int64_t nLowEndSubsidy = 50 * COIN;
+static const int64_t nHighEndSubsidy = 50000 * COIN;
+static const int nOfMostProfitableBlock=(60*60*24*25)/nTargetSpacing; // # of blocks in 50 days
+static const int nStartingRandomRange = 100000;
+
 
 
 int64_t devCoin = 5 * COIN;
@@ -972,23 +984,83 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
     return pblockOrphan->hashPrevBlock;
 }
 
+int static generateMTRandom(unsigned int s, int range)
+{
+    random::mt19937 gen(s);
+    random::uniform_int_distribution<> dist(1, range);
+    return dist(gen);
+}
+
+
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-    if (pindexBest->nHeight == 1)
-      {
-        int64_t nSubsidy = 150000 * COIN;
-        if (fDebug && GetBoolArg("-printcreation"))
-        printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
-        return nSubsidy + nFees;
-      }
+    int64_t nSubsidy = nLowEndSubsidy;
+    int nBlockHeight = pindexBest->nHeight;
+
+    if (nBlockHeight == 1)
+    {
+        nSubsidy = nHighEndSubsidy;//150000 * COIN; // first block is very generous!
+
+    }
     else
     {
-        int64_t nSubsidy = 505 * COIN;
+        // a larger number means less probabilty to find a high reward
+        int nRandomRangeMax=nStartingRandomRange;
+        double nMaxRewardAreaPercentage=0.001;
+
+        // for the first 50 days we are going to be more generous
+        // then every 50 day the odds of high rewards get lower
+        int factor = nBlockHeight/nOfMostProfitableBlock;
+
+        nRandomRangeMax = (factor+1) * nStartingRandomRange;
+
+
+        // probability partions of the range:
+        int nMaxRewardRange=(nMaxRewardAreaPercentage*0.01*nRandomRangeMax);
+        int nMaxRewardRangeStart=1;
+
+        int n2ndRewardRange= 2 * nMaxRewardRange;
+        int n2ndRewardRangeStart = nMaxRewardRangeStart + nMaxRewardRange;
+
+        int n3dRewardRange= 2 * n2ndRewardRange;
+        int n3dRewardRangeStart = n2ndRewardRangeStart + n2ndRewardRange;
+
+        int nNormalRewardRangeStart=n3dRewardRangeStart + n3dRewardRange;
+        int nNormalRewardRange = (nRandomRangeMax- nNormalRewardRangeStart)/2;
+
+        int nLowRewardRangeStart = nNormalRewardRangeStart + nNormalRewardRange;
+        int nLowRewardRange = nNormalRewardRange;
+
+
+
+        std::string cseed_str = pindexBest->GetBlockHash().ToString().substr(8,7);
+        const char* cseed = cseed_str.c_str();
+        long seed = hex2long(cseed);
+
+        int rand = generateMTRandom(seed, nRandomRangeMax);
+
+        if(rand >= nMaxRewardRangeStart && rand < nMaxRewardRangeStart + nMaxRewardRange)
+            nSubsidy = nHighEndSubsidy;
+        else if(rand >= n2ndRewardRangeStart && rand < n2ndRewardRangeStart + n2ndRewardRange)
+            nSubsidy = nHighEndSubsidy/10;
+        else if(rand >= n3dRewardRangeStart && rand < n3dRewardRangeStart + n3dRewardRange)
+            nSubsidy = nHighEndSubsidy/20;
+        else if(rand >= n3dRewardRangeStart && rand < n3dRewardRangeStart + n3dRewardRange)
+            nSubsidy = nHighEndSubsidy/20;
+        else if(rand >= nNormalRewardRangeStart && rand < nNormalRewardRangeStart + nNormalRewardRange)
+            nSubsidy = nLowEndSubsidy;
+        else if(rand >= nLowRewardRangeStart && rand < nLowRewardRangeStart + nLowRewardRange)
+            nSubsidy = nHighEndSubsidy/100;
+
+
+//        int64_t nSubsidy = 505 * COIN;
         if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
-        return nSubsidy + nFees;
+//        return nSubsidy + nFees;
     }
+
+    return nSubsidy + nFees;
 }
 
 const int DAILY_BLOCKCOUNT =  1440;
@@ -1127,7 +1199,7 @@ static unsigned int GetNextTargetRequired_(const CBlockIndex* pindexLast, bool f
 
     // target change every block
     // retarget with exponential moving toward target spacing
-    // Includes GryfenCoin fix for wrong retargeting difficulty by Mammix2
+    // Includes MaiaCoin fix for wrong retargeting difficulty by Mammix2
 
     CBigNum bnNew;
     bnNew.SetCompact(pindexPrev->nBits);
@@ -2191,8 +2263,9 @@ bool CBlock::AcceptBlock()
     CBlockIndex* pindexPrev = (*mi).second;
     int nHeight = pindexPrev->nHeight+1;
 
-    if (IsProofOfWork() && nHeight > LAST_POW_BLOCK)
-        return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
+    // gryfencrypto:
+//    if (IsProofOfWork() && nHeight > LAST_POW_BLOCK)
+//        return DoS(100, error("AcceptBlock() : reject proof-of-work at height %d", nHeight));
 
     // Check proof-of-work or proof-of-stake
     if (nBits != GetNextTargetRequired(pindexPrev, IsProofOfStake()))
