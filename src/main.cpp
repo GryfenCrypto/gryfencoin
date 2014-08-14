@@ -56,16 +56,16 @@ static const int64_t nInterval = nTargetTimespan_legacy / nTargetSpacing;
 
 
 // gryfencrypto:
-static const int64_t nMinBlockRewardSubsidy = 50 * COIN;
-static const int64_t nMaxBlockRewardSubsidy = 50000 * COIN;
+static const int64_t nMinBlockReward = 50 * COIN;
+static const int64_t nMaxBlockReward = 50000 * COIN;
 
 // after 1 year we halve the reward
 static const int nHalvingRewardTime=(60*60*24*365)/nTargetSpacing; // # of blocks in 1 year
 static const int nStartingRandomRange = 100000;
 
 
-// gryfencrypto: we use a % of the block reward
-int64_t devCoin = 0;//5 * COIN;
+// gryfencrypto:
+int64_t devCoin = 5 * COIN;
 int nCoinbaseMaturity = 100;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -997,12 +997,12 @@ int static generateMTRandom(unsigned int s, int range)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-    int64_t nSubsidy = nMinBlockRewardSubsidy;
+    int64_t nSubsidy = nMinBlockReward;
     int nBlockHeight = pindexBest->nHeight;
 
     if (nBlockHeight == 1)
     {
-        nSubsidy = nMaxBlockRewardSubsidy;//150000 * COIN; // first block is very generous!
+        nSubsidy = nMaxBlockReward;// first block is very generous!
 
     }
     else
@@ -1042,23 +1042,23 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         int rand = generateMTRandom(seed, nRandomRangeMax);
 
         if(rand >= nMaxRewardRangeStart && rand < nMaxRewardRangeStart + nMaxRewardRange)
-            nSubsidy = nMaxBlockRewardSubsidy;
+            nSubsidy = nMaxBlockReward/factor;
         else if(rand >= n2ndRewardRangeStart && rand < n2ndRewardRangeStart + n2ndRewardRange)
-            nSubsidy = nMaxBlockRewardSubsidy/10*factor;
+            nSubsidy = nMaxBlockReward/10*factor;
         else if(rand >= n3dRewardRangeStart && rand < n3dRewardRangeStart + n3dRewardRange)
-            nSubsidy = nMaxBlockRewardSubsidy/20*factor;
+            nSubsidy = nMaxBlockReward/20*factor;
         else if(rand >= n3dRewardRangeStart && rand < n3dRewardRangeStart + n3dRewardRange)
-            nSubsidy = nMaxBlockRewardSubsidy/40*factor;
+            nSubsidy = nMaxBlockReward/40*factor;
         else if(rand >= nNormalRewardRangeStart && rand < nNormalRewardRangeStart + nNormalRewardRange)
-            nSubsidy = nMinBlockRewardSubsidy;
+            nSubsidy = nMinBlockReward;
         else if(rand >= nLowRewardRangeStart && rand < nLowRewardRangeStart + nLowRewardRange)
-            nSubsidy = nMaxBlockRewardSubsidy/100*factor;
+            nSubsidy = nMaxBlockReward/100*factor;
 
 
-//        int64_t nSubsidy = 505 * COIN;
+
         if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
-//        return nSubsidy + nFees;
+
     }
 
     return nSubsidy + nFees;
@@ -1730,7 +1730,8 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
             return error("ConnectBlock() : coinbase does not pay to the dev address)");
 
         // gryfencrypto:
-        int64_t nExtraFee = GetProofOfWorkReward(nFees) * EXTRA_FEE_PCT;
+        int64_t nExtraFee = nFees * EXTRA_FEE_PCT;
+        if(nExtraFee < MIN_EXTRA_FEE) nExtraFee=MIN_EXTRA_FEE;
         if (vtx[0].vout[1].nValue < nExtraFee)
             return error("ConnectBlock() : coinbase does not pay enough to dev addresss");
     }

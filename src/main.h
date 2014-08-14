@@ -39,7 +39,8 @@ static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 static const int64_t MAX_MONEY = 1000000000000 * COIN; // gryfencoin spec: 1 trillion
 static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 0.05 * COIN;	// 5% annual interest
-static const int64_t EXTRA_FEE_PCT = 0.001; // 0.1% goes to superfaucet and others
+static const int64_t EXTRA_FEE_PCT = 0.25; // 25% goes to superfaucet and others
+static const int64_t MIN_EXTRA_FEE = 2 * COIN; // minimum of 2 coins fee
 
 #define FOUNDATION "MBKVCNHtGHdtxA5jfpYnaibCeYR25UpwUY"
 #define FOUNDATION_TEST "mnkAosicqQVunBvc3jc5KW2c97NestS2WF"

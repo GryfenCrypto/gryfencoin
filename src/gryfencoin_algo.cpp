@@ -11,7 +11,7 @@ void buildAlgosTable()
 
     // balke512
 
-    algosTable[index++]=0;
+    algosTable[index++]=blake;
 
     // bmw512
 
