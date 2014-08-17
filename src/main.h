@@ -37,13 +37,13 @@ static const unsigned int MAX_INV_SZ = 50000;
 static const int64_t MIN_TX_FEE = 10000;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 static const int64_t MAX_MONEY = 1000000000000 * COIN; // gryfencoin spec: 1 trillion
-static const int64_t COIN_YEAR_REWARD = 1 * CENT; // 1% per year
+static const int64_t COIN_YEAR_REWARD = 9 * CENT; // 1% per year
 static const int64_t MAX_MINT_PROOF_OF_STAKE = 0.05 * COIN;	// 5% annual interest
 static const int64_t EXTRA_FEE_PCT = 0.25; // 25% goes to superfaucet and others
 static const int64_t MIN_EXTRA_FEE = 2 * COIN; // minimum of 2 coins fee
 
 #define FOUNDATION "MBKVCNHtGHdtxA5jfpYnaibCeYR25UpwUY"
-#define FOUNDATION_TEST "mnkAosicqQVunBvc3jc5KW2c97NestS2WF"
+#define FOUNDATION_TEST "gJNmmkf2qsbhFs6qkWtcJzmwWp7FspBqrm"
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
@@ -56,7 +56,7 @@ static const int fHaveUPnP = false;
 #endif
 
 static const uint256 hashGenesisBlock("00000a721a62a6e081c6440a07b0dd0b7918d2842debe19d1ad25411ea1a4bfd");
-static const uint256 hashGenesisBlockTestNet("000090e81cd08c0674cd220b9bb498d3a1d19391122faa1dad9ec48bf087b5fb");
+static const uint256 hashGenesisBlockTestNet("0000af0836025da05aff303cc8a03b977f333782248ccebef276640a939d367f");
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 24 * 60 * 60; } // up to 1 day from the past
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 24 * 60 * 60; } // up to 1 day from the future

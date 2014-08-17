@@ -58,6 +58,7 @@ static const int64_t nInterval = nTargetTimespan_legacy / nTargetSpacing;
 // gryfencrypto:
 static const int64_t nMinBlockReward = 50 * COIN;
 static const int64_t nMaxBlockReward = 50000 * COIN;
+static const int64_t nPreminedBlockReward = 0.0025*MAX_MONEY;
 
 // after 1 year we halve the reward
 static const int nHalvingRewardTime=(60*60*24*365)/nTargetSpacing; // # of blocks in 1 year
@@ -1002,7 +1003,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 
     if (nBlockHeight == 1)
     {
-        nSubsidy = nMaxBlockReward;// first block is very generous!
+        nSubsidy = nPreminedBlockReward;// first block is very generous!
 
     }
     else
@@ -1050,9 +1051,9 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         else if(rand >= n3dRewardRangeStart && rand < n3dRewardRangeStart + n3dRewardRange)
             nSubsidy = nMaxBlockReward/40*factor;
         else if(rand >= nNormalRewardRangeStart && rand < nNormalRewardRangeStart + nNormalRewardRange)
-            nSubsidy = nMinBlockReward;
-        else if(rand >= nLowRewardRangeStart && rand < nLowRewardRangeStart + nLowRewardRange)
             nSubsidy = nMaxBlockReward/100*factor;
+        else if(rand >= nLowRewardRangeStart && rand < nLowRewardRangeStart + nLowRewardRange)
+            nSubsidy = nMinBlockReward;
 
 
 
@@ -2658,7 +2659,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         const char* pszTimestamp = "x28561 GryfenCoin rulez!";
         CTransaction txNew;
-        txNew.nTime = 1407524404;
+        txNew.nTime = 1408151494;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2668,12 +2669,12 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1407524404;
+        block.nTime    = 1408151494;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = 187296;
         if(fTestNet)
         {
-            block.nNonce   = 153144;
+            block.nNonce   = 153199;
         }
         if (true  && (block.GetHash() != hashGenesisBlock)) {
 
@@ -2697,7 +2698,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("278fbe92605a2697345889aa634b2a93e66f1a1c9f70114c899040c74da4843a"));
+        assert(block.hashMerkleRoot == uint256("e614b5f37e120fda64c49e2a212a5dab0979975b80f79533b5f39d42946d4d7e"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());

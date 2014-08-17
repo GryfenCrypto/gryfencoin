@@ -154,8 +154,7 @@ OBJS= \
     obj/scrypt.o \
     obj/scrypt-arm.o \
     obj/scrypt-x86.o \
-    obj/scrypt-x86_64.o \
-    obj/gryfencoin_algo.o
+    obj/scrypt-x86_64.o 
 
 all: gryfencoind
 
@@ -211,19 +210,17 @@ clean:
 	-rm -f leveldb/libleveldb.a
 	-rm -f leveldb/libmemenv.a
 
-FORCE:
-
 TESTOBJS := $(patsubst test/%.cpp,obj-test/%.o,$(wildcard test/*.cpp))
 
 obj-test/%.o: test/%.cpp
-	$(CXX) -c $(TESTDEFS) $(xCXXFLAGS) -MMD -MF $(@:%.o=%.d) -o $@ $<
+	$(CXX) -c $(TESTDEFS) $(xCXXFLAGS) -MMD -MF $(@:%.o=%.d)  -o $@ $<
 	@cp $(@:%.o=%.d) $(@:%.o=%.P); \
 	  sed -e 's/#.*//' -e 's/^[^:]*: *//' -e 's/ *\\$$//' \
 	      -e '/^$$/ d' -e 's/$$/ :/' < $(@:%.o=%.d) >> $(@:%.o=%.P); \
 	  rm -f $(@:%.o=%.d)
 
-test_gryfencoind: $(TESTOBJS) $(filter-out obj/init.o,$(OBJS:obj/%=obj/%))
-	$(CXX) $(xCXXFLAGS) -o $@ $(LIBPATHS) $^ -Wl,-B$(LMODE) -lboost_unit_test_framework $(xLDFLAGS) $(LIBS)
+test_gryfencoind: $(TESTOBJS) $(filter-out obj/gryfencoind.o,$(OBJS:obj/%=obj/%))
+	$(LINK) $(xCXXFLAGS) -o $@ $(LIBPATHS) $^ -Wl,-B$(LMODE) -lboost_unit_test_framework $(xLDFLAGS) $(LIBS)
 
 clean:
 	-rm -f gryfencoind test_gryfencoind

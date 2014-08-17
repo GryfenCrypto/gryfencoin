@@ -61,7 +61,7 @@ void StatisticsPage::updateStatistics()
     {
         phase = "Proof of Stake";
     }
-    QString subsidy = QString::number(nSubsidy, 'f', 6);
+    QString subsidy = "Random";//QString::number(nSubsidy, 'f', 6);
     QString hardness = QString::number(pHardness, 'f', 6);
     QString hardness2 = QString::number(pHardness2, 'f', 6);
     QString pawrate = QString::number(pPawrate2, 'f', 3);

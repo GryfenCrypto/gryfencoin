@@ -17,8 +17,7 @@
 #include <boost/algorithm/string/predicate.hpp>
 #include <openssl/crypto.h>
 
-// gryfencrypto
-#include "gryfencoin_algo.h"
+
 
 #ifndef WIN32
 #include <signal.h>
@@ -188,6 +187,8 @@ bool AppInit(int argc, char* argv[])
 }
 
 extern void noui_connect();
+
+#ifndef UTEST
 int main(int argc, char* argv[])
 {
     bool fRet = false;
@@ -202,6 +203,8 @@ int main(int argc, char* argv[])
 
     return 1;
 }
+#endif
+
 #endif
 
 bool static InitError(const std::string &str)
@@ -329,8 +332,7 @@ std::string HelpMessage()
  */
 bool AppInit2()
 {
-    // gryfencrypto
-    buildAlgosTable();
+
     // ********************************************************* Step 1: setup
 #ifdef _MSC_VER
     // Turn off Microsoft heap dump noise

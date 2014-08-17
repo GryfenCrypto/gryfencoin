@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>623</width>
-    <height>505</height>
+    <height>508</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -51,19 +51,6 @@ font-family:'Open Sans,sans-serif';</string>
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>70</y>
-        <width>191</width>
-        <height>281</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;GryfenCoin phases:&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;Block 1 -&amp;gt; 43200: &lt;span style=&quot; font-weight:600;&quot;&gt;Proof of Work&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Block 43200 -&amp;gt;: &lt;span style=&quot; font-weight:600;&quot;&gt;Proof of Stake&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-     </widget>
     </widget>
    </item>
    <item row="0" column="0">
