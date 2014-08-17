@@ -67,7 +67,7 @@ static const int nStartingRandomRange = 100000;
 
 // gryfencrypto:
 int64_t devCoin = 5 * COIN;
-int nCoinbaseMaturity = 100;
+int nCoinbaseMaturity = 110;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 

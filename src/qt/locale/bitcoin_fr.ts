@@ -1681,8 +1681,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 GFC</source>
-        <translation>123.456 GFC {0.00 ?}</translation>
+        <source>0.00 GRYF</source>
+        <translation>123.456 GRYF {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1751,8 +1751,8 @@ Cela implique que des frais à hauteur d&apos;au moins %2 seront nécessaires.</
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 GFC</source>
-        <translation>123.456 GFC</translation>
+        <source>123.456 GRYF</source>
+        <translation>123.456 GRYF</translation>
     </message>
     <message>
         <location line="+31"/>

@@ -1682,8 +1682,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <location line="+86"/>
         <location line="+86"/>
         <location line="+32"/>
-        <source>0.00 GFC</source>
-        <translation>123.456 GFC {0.00 ?}</translation>
+        <source>0.00 GRYF</source>
+        <translation>123.456 GRYF {0.00 ?}</translation>
     </message>
     <message>
         <location line="-191"/>
@@ -1752,8 +1752,8 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     </message>
     <message>
         <location line="+16"/>
-        <source>123.456 GFC</source>
-        <translation>123.456 GFC</translation>
+        <source>123.456 GRYF</source>
+        <translation>123.456 GRYF</translation>
     </message>
     <message>
         <location line="+31"/>
