@@ -1732,7 +1732,7 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
 
         // gryfencrypto:
         int64_t nExtraFee = nFees * EXTRA_FEE_PCT;
-        if(nExtraFee < MIN_EXTRA_FEE) nExtraFee=MIN_EXTRA_FEE;
+        //if(nExtraFee < MIN_EXTRA_FEE) nExtraFee=MIN_EXTRA_FEE;
         if (vtx[0].vout[1].nValue < nExtraFee)
             return error("ConnectBlock() : coinbase does not pay enough to dev addresss");
     }
@@ -2659,7 +2659,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         const char* pszTimestamp = "x28561 GryfenCoin rulez!";
         CTransaction txNew;
-        txNew.nTime = 1408151494;
+        txNew.nTime = 1408251275;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2669,12 +2669,12 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1408151494;
+        block.nTime    = 1408251275;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = 187296;
         if(fTestNet)
         {
-            block.nNonce   = 153199;
+            block.nNonce   = 163199;
         }
         if (true  && (block.GetHash() != hashGenesisBlock)) {
 
@@ -2698,7 +2698,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("e614b5f37e120fda64c49e2a212a5dab0979975b80f79533b5f39d42946d4d7e"));
+        assert(block.hashMerkleRoot == uint256("a32af2c0494607ac6dff4caba8905952f632f0907ee71ed22b4b4a9616e4f4b3"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
