@@ -2659,7 +2659,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         const char* pszTimestamp = "x28561 GryfenCoin rulez!";
         CTransaction txNew;
-        txNew.nTime = 1408348094;
+        txNew.nTime = 1408390336;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2669,7 +2669,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1408348094;
+        block.nTime    = 1408390336;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = 187296;
         if(fTestNet)
