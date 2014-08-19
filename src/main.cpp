@@ -998,7 +998,7 @@ int static generateMTRandom(unsigned int s, int range)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-    int64_t nSubsidy = nMinBlockReward;
+    int64_t nSubsidy = nMinBlockReward ;
     int nBlockHeight = pindexBest->nHeight;
 
     if (nBlockHeight == 1)
@@ -2659,7 +2659,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         const char* pszTimestamp = "x28561 GryfenCoin rulez!";
         CTransaction txNew;
-        txNew.nTime = 1408251275;
+        txNew.nTime = 1408390336;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2669,7 +2669,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1408251275;
+        block.nTime    = 1408390336;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = 187296;
         if(fTestNet)
@@ -2698,7 +2698,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("a32af2c0494607ac6dff4caba8905952f632f0907ee71ed22b4b4a9616e4f4b3"));
+        assert(block.hashMerkleRoot == uint256("4ccac994c64bd683b8021853bdf73ec0f4fed20abd4b7c177f5b8b564c247825"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
