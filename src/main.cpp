@@ -2628,7 +2628,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         bnTrustedModulus.SetHex("f0d14cf72623dacfe738d0892b599be0f31052239cddd95a3f25101c801dc990453b38c9434efe3f372db39a32c2bb44cbaea72d62c8931fa785b0ec44531308df3e46069be5573e49bb29f4d479bfc3d162f57a5965db03810be7636da265bfced9c01a6b0296c77910ebdc8016f70174f0f18a57b3b971ac43a934c6aedbc5c866764a3622b5b7e3f9832b8b3f133c849dbcc0396588abcd1e41048555746e4823fb8aba5b3d23692c6857fccce733d6bb6ec1d5ea0afafecea14a0f6f798b6b27f77dc989c557795cc39a0940ef6bb29a7fc84135193a55bcfc2f01dd73efad1b69f45a55198bd0e6bef4d338e452f6a420f1ae2b1167b923f76633ab6e55");
         bnProofOfWorkLimit = bnProofOfWorkLimitTestNet; // 16 bits PoW target limit for testnet
-        nStakeMinAge = 60; // test net min age is 1 hour
+        nStakeMinAge =  60; // test net min age is 1 hour
         nCoinbaseMaturity = 10; // test maturity is 10 blocks
         nModifierInterval = 60;
     }
@@ -2659,7 +2659,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         const char* pszTimestamp = "x28561 GryfenCoin rulez!";
         CTransaction txNew;
-        txNew.nTime = 1408392691;
+        txNew.nTime = 1408438631;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2669,12 +2669,12 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1408392691;
+        block.nTime    = 1408438631;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 1852178;
+        block.nNonce   = 2810479;
         if(fTestNet)
         {
-            block.nNonce   = 163129;
+            block.nNonce   = 443771;
         }
         if (true  && (block.GetHash() != hashGenesisBlock)) {
 
@@ -2698,7 +2698,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("de1b78a4659ded2d1cedfee9a30ee83d3f7838836c4167dcf9d5789dd5577ead"));
+        assert(block.hashMerkleRoot == uint256("ec4b3a11e8fc136649fa4166d0b69485a1de96cbf89aba25ac10d4851abcdfc1"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());

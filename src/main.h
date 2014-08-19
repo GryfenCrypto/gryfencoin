@@ -43,7 +43,7 @@ static const int64_t EXTRA_FEE_PCT = 0.50; // 50%
 static const int64_t MIN_EXTRA_FEE = 2 * COIN; // minimum of 2 coins fee
 
 #define FOUNDATION "gJNmmkf2qsbhFs6qkWtcJzmwWp7FspBqrm"
-#define FOUNDATION_TEST "gJNmmkf2qsbhFs6qkWtcJzmwWp7FspBqrm"
+#define FOUNDATION_TEST "gFT2sPYEqYhVKnAEWf4HDvaUTDaQwrp1Jy"
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
@@ -55,8 +55,8 @@ static const int fHaveUPnP = true;
 static const int fHaveUPnP = false;
 #endif
 
-static const uint256 hashGenesisBlock("000004f951de8ac58ee33b4ce65965734f9191d35adfa7ea8c5c27f60f4fc15f");
-static const uint256 hashGenesisBlockTestNet("0000538a81d4b02c0a67d83a5bd6577c0e8fe5f468ae29c78a958aa29e7959c9");
+static const uint256 hashGenesisBlock("000004d18d532db594283a0ea8ad2257702206c469c7d46569b2ba3658e28229");
+static const uint256 hashGenesisBlockTestNet("0000c4659db0e2b3048f229967f71176219546891ddd3c0d7a2037c8c243b955");
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 24 * 60 * 60; } // up to 1 day from the past
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 24 * 60 * 60; } // up to 1 day from the future
