@@ -2659,7 +2659,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         const char* pszTimestamp = "x28561 GryfenCoin rulez!";
         CTransaction txNew;
-        txNew.nTime = 1408390336;
+        txNew.nTime = 1408438631;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2669,12 +2669,12 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1408390336;
+        block.nTime    = 1408438631;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 187296;
+        block.nNonce   = 2810479;
         if(fTestNet)
         {
-            block.nNonce   = 163199;
+            block.nNonce   = 443771;
         }
         if (true  && (block.GetHash() != hashGenesisBlock)) {
 
@@ -2698,7 +2698,7 @@ bool LoadBlockIndex(bool fAllowNew)
         printf("block.nNonce = %u \n", block.nNonce);
 
         //// debug print
-        assert(block.hashMerkleRoot == uint256("4ccac994c64bd683b8021853bdf73ec0f4fed20abd4b7c177f5b8b564c247825"));
+        assert(block.hashMerkleRoot == uint256("ec4b3a11e8fc136649fa4166d0b69485a1de96cbf89aba25ac10d4851abcdfc1"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
