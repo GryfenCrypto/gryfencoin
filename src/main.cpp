@@ -1005,13 +1005,20 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     int64_t nSubsidy = nMinBlockReward ;
     int nBlockHeight = pindexBest->nHeight;
 
-    if (nBlockHeight == 0)
+    if (nBlockHeight < 1)
     {
         nSubsidy = nPreminedBlockReward;// first block is very generous!
         if (fDebug && GetBoolArg("-printcreation"))
             printf("GetProofOfWorkReward() block n 1!");
 
     }
+    else if (pindexBest->nHeight < 101)
+   {
+     int64_t nSubsidy = 1 * COIN; //1 Coin per block to prevent instamine
+     if (fDebug && GetBoolArg("-printcreation"))
+     printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
+     return nSubsidy + nFees;
+   }
     else
     {
         // a larger number means less probabilty to find a high reward
@@ -1025,7 +1032,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 
 
         // probability partions of the range:
-        int nMaxRewardRange=(nMaxRewardAreaPercentage*0.01*nRandomRangeMax);
+        int nMaxRewardRange=(nMaxRewardAreaPercentage*nRandomRangeMax);
         int nMaxRewardRangeStart=1;
 
         int n2ndRewardRange= 2 * nMaxRewardRange;
@@ -1035,18 +1042,18 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         int n3dRewardRangeStart = n2ndRewardRangeStart + n2ndRewardRange;
 
         int nNormalRewardRangeStart=n3dRewardRangeStart + n3dRewardRange;
-        int nNormalRewardRange = (nRandomRangeMax- nNormalRewardRangeStart)/2;
+        int nNormalRewardRange = (nRandomRangeMax- nNormalRewardRangeStart)/4;
 
         int nLowRewardRangeStart = nNormalRewardRangeStart + nNormalRewardRange;
         int nLowRewardRange = nNormalRewardRange;
 
 
 
-        std::string cseed_str = pindexBest->GetBlockHash().ToString().substr(8,7);
-        const char* cseed = cseed_str.c_str();
-        long seed = hex2long(cseed);
+//        std::string cseed_str = pindexBest->GetBlockHash().ToString().substr(8,7);
+//        const char* cseed = cseed_str.c_str();
+//        long seed = hex2long(cseed);
 
-        int rand = generateMTRandom(seed, nRandomRangeMax);
+        int rand = generateMTRandom(pindexBest->nHeight, nRandomRangeMax);
 
         if(rand >= nMaxRewardRangeStart && rand < nMaxRewardRangeStart + nMaxRewardRange)
             nSubsidy = nMaxBlockReward/factor;
