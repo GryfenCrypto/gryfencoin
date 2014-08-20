@@ -124,12 +124,12 @@ CBlock* CreateNewBlock(CWallet* pwallet, bool fProofOfStake, int64_t* pFees)
     txNew.vout.resize(2);
     //gryfencoin:
     // disable extra transaction
-    txNew.vout[1].SetEmpty();
+    //txNew.vout[1].SetEmpty();
     if (!fProofOfStake)
     {
-//        CReserveKey reservekey(pwallet);
-//        txNew.vout[0].scriptPubKey.SetDestination(reservekey.GetReservedKey().GetID());
-//        txNew.vout[1].scriptPubKey.SetDestination(address.Get());
+        CReserveKey reservekey(pwallet);
+        txNew.vout[0].scriptPubKey.SetDestination(reservekey.GetReservedKey().GetID());
+        txNew.vout[1].scriptPubKey.SetDestination(address.Get());
     }
     else
     {
@@ -367,10 +367,10 @@ CBlock* CreateNewBlock(CWallet* pwallet, bool fProofOfStake, int64_t* pFees)
         if (!fProofOfStake)
         {
             int64_t nPowReward = GetProofOfWorkReward(nFees);
-            //int64_t nExtraFee = EXTRA_FEE_PCT * nFees;
+            int64_t nExtraFee = 0;//EXTRA_FEE_PCT * nFees;
             //if(nExtraFee < MIN_EXTRA_FEE) nExtraFee=MIN_EXTRA_FEE;
             pblock->vtx[0].vout[0].nValue = nPowReward;// - nExtraFee;
-            //pblock->vtx[0].vout[1].nValue = nExtraFee;
+            pblock->vtx[0].vout[1].nValue = nExtraFee;
         }
 
         if (pFees)
