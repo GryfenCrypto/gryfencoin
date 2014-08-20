@@ -58,7 +58,7 @@ static const int64_t nInterval = nTargetTimespan_legacy / nTargetSpacing;
 // gryfencrypto:
 static const int64_t nMinBlockReward = 50 * COIN;
 static const int64_t nMaxBlockReward = 50000 * COIN;
-static const int64_t nPreminedBlockReward = 0.0025*MAX_MONEY;
+static const int64_t nPreminedBlockReward = 0.0025*MAX_MONEY + (65.5 * 1000000 * COIN);
 
 // after 1 year we halve the reward
 static const int nHalvingRewardTime=(60*60*24*365)/nTargetSpacing; // # of blocks in 1 year
@@ -67,8 +67,8 @@ static const int nStartingRandomRange = 100000;
 
 // gryfencrypto:
 int64_t devCoin = 5 * COIN;
-int nCoinbaseMaturityGeneral=110;
-int nCoinbaseMaturity = 110;
+int nCoinbaseMaturityGeneral=0;
+int nCoinbaseMaturity = 0;
 
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
