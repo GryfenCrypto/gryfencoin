@@ -46,9 +46,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("M")+("a")+("i")+("a")+("C")+("o")+("i")+("n") +("s");
-    case mBTC: return QString("Milli-") + ("M")+("a")+("i")+("a") + ("1 / 1,000)");
-    case uBTC: return QString("Micro-") + ("M")+("a")+("i")+("a") + ("1 / 1,000,000)");
+    case BTC: return QString("G")+("r")+("y")+("f")+("e")+("n")+("C")+("o") +("i")+("n")+("s");
+    case mBTC: return QString("Milli-") + ("G")+("r")+("y")+("f") + ("e") + ("n") +("1 / 1,000)");
+    case uBTC: return QString("Micro-") + ("G")+("r")+("y")+("f") + ("e") + ("n") + ("1 / 1,000,000)");
     default: return QString("???");
     }
 }
@@ -88,9 +88,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case BTC: return 8;
-    case mBTC: return 5;
-    case uBTC: return 2;
+    case BTC: return 6;
+    case mBTC: return 3;
+    case uBTC: return 0;
     default: return 0;
     }
 }
