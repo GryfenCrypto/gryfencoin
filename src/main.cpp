@@ -48,7 +48,7 @@ unsigned int nTargetSpacing = 1 * 60; // gryfencrypto: 1 minute per block
 static const int64_t nTargetTimespan = 1 * 60; // gryfencoin spec: look at last 60 seconds
 
 unsigned int nRetarget = 30;
-unsigned int nStakeMinAge = 60;//24 * 60 * 60; // 1 day
+unsigned int nStakeMinAge = 24 * 60 * 60; // 1 day
 unsigned int nStakeMaxAge = -1;           //unlimited
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 static const int64_t nTargetTimespan_legacy = nTargetSpacing * nRetarget; // every 30 blocks
@@ -830,7 +830,8 @@ int CMerkleTx::GetDepthInMainChain(CBlockIndex* &pindexRet) const
 
 int CMerkleTx::GetBlocksToMaturity() const
 {
-
+    if (fDebug )
+        printf("nCoinbaseMaturity=%d , GetDepthInMainChain=%d",nCoinbaseMaturity,GetDepthInMainChain());
     if (!(IsCoinBase() || IsCoinStake()))
         return 0;
     return max(0, (nCoinbaseMaturity+10) - GetDepthInMainChain());
