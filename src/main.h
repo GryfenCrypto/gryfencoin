@@ -42,7 +42,7 @@ static const int64_t MAX_MINT_PROOF_OF_STAKE = 0.05 * COIN;	// 5% annual interes
 static const int64_t EXTRA_FEE_PCT = 0.50; // 50%
 static const int64_t MIN_EXTRA_FEE = 2 * COIN; // minimum of 2 coins fee
 
-#define FOUNDATION "gJNmmkf2qsbhFs6qkWtcJzmwWp7FspBqrm"
+#define FOUNDATION "gNzkoeVeEeX1K8ywWtR2WaeaDpAWGZJVsp"
 #define FOUNDATION_TEST "gNzkoeVeEeX1K8ywWtR2WaeaDpAWGZJVsp"
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
