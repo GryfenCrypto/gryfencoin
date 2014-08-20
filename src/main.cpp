@@ -1012,12 +1012,23 @@ int64_t GetProofOfWorkReward(int64_t nFees)
             printf("GetProofOfWorkReward() block n 1!");
 
     }
-    else if (pindexBest->nHeight < 101)
+    else if (pindexBest->nHeight >= 1 && pindexBest->nHeight< 101)
    {
-     int64_t nSubsidy = 1 * COIN; //1 Coin per block to prevent instamine
-     if (fDebug && GetBoolArg("-printcreation"))
-     printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
-     return nSubsidy + nFees;
+     nSubsidy = 1 * COIN; //1 Coin per block to prevent instamine
+
+
+   }
+    else if (pindexBest->nHeight >=101 && pindexBest->nHeight< 501)
+   {
+     nSubsidy = 2 * COIN; //1 Coin per block to prevent instamine
+
+
+   }
+    else if (pindexBest->nHeight >=501 && pindexBest->nHeight< 1001)
+   {
+     nSubsidy = 4 * COIN; //1 Coin per block to prevent instamine
+
+
    }
     else
     {
@@ -1061,8 +1072,6 @@ int64_t GetProofOfWorkReward(int64_t nFees)
             nSubsidy = nMaxBlockReward/10*factor;
         else if(rand >= n3dRewardRangeStart && rand < n3dRewardRangeStart + n3dRewardRange)
             nSubsidy = nMaxBlockReward/20*factor;
-        else if(rand >= n3dRewardRangeStart && rand < n3dRewardRangeStart + n3dRewardRange)
-            nSubsidy = nMaxBlockReward/40*factor;
         else if(rand >= nNormalRewardRangeStart && rand < nNormalRewardRangeStart + nNormalRewardRange)
             nSubsidy = nMaxBlockReward/100*factor;
         else if(rand >= nLowRewardRangeStart && rand < nLowRewardRangeStart + nLowRewardRange)
