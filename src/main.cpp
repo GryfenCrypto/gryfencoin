@@ -67,7 +67,9 @@ static const int nStartingRandomRange = 100000;
 
 // gryfencrypto:
 int64_t devCoin = 5 * COIN;
+int nCoinbaseMaturityGeneral=110;
 int nCoinbaseMaturity = 110;
+int nCoinbaseMaturityFirstBlock = -12;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -2178,9 +2180,9 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
     // These are checks that are independent of context
     // that can be verified before saving an orphan block.
     if(pindexBest != NULL && pindexBest->nHeight > 1)
-        nCoinbaseMaturity = nCoinbaseMaturity; //coinbase maturity change to 180 blocks //gryfencoin:
+        nCoinbaseMaturity = nCoinbaseMaturityGeneral; //coinbase maturity change to 180 blocks //gryfencoin:
     else
-        nCoinbaseMaturity=-8; //gryfencoin:
+        nCoinbaseMaturity=nCoinbaseMaturityFirstBlock; //gryfencoin:
     // Size limits
     if (vtx.empty() || vtx.size() > MAX_BLOCK_SIZE || ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION) > MAX_BLOCK_SIZE)
         return DoS(100, error("CheckBlock() : size limits failed"));
