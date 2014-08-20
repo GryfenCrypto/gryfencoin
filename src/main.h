@@ -43,7 +43,7 @@ static const int64_t EXTRA_FEE_PCT = 0.50; // 50%
 static const int64_t MIN_EXTRA_FEE = 2 * COIN; // minimum of 2 coins fee
 
 #define FOUNDATION "gJNmmkf2qsbhFs6qkWtcJzmwWp7FspBqrm"
-#define FOUNDATION_TEST "gNzuFk1r3dWJ75gaCxnf6c1fyVCJiZvwK4"
+#define FOUNDATION_TEST "gNzkoeVeEeX1K8ywWtR2WaeaDpAWGZJVsp"
 
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 // Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp.
