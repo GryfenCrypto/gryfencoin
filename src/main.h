@@ -55,7 +55,7 @@ static const int fHaveUPnP = true;
 static const int fHaveUPnP = false;
 #endif
 
-static const uint256 hashGenesisBlock("000004d18d532db594283a0ea8ad2257702206c469c7d46569b2ba3658e28229");
+static const uint256 hashGenesisBlock("000002dc01fb87453820f9f127284713b9d165ae5135685a6c94a94bd9410673");
 static const uint256 hashGenesisBlockTestNet("0000c4659db0e2b3048f229967f71176219546891ddd3c0d7a2037c8c243b955");
 
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 24 * 60 * 60; } // up to 1 day from the past
