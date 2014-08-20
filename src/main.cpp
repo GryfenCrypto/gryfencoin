@@ -830,6 +830,7 @@ int CMerkleTx::GetDepthInMainChain(CBlockIndex* &pindexRet) const
 
 int CMerkleTx::GetBlocksToMaturity() const
 {
+
     if (!(IsCoinBase() || IsCoinStake()))
         return 0;
     return max(0, (nCoinbaseMaturity+10) - GetDepthInMainChain());
@@ -1005,7 +1006,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     {
         nSubsidy = nPreminedBlockReward;// first block is very generous!
         if (fDebug && GetBoolArg("-printcreation"))
-        printf("GetProofOfWorkReward() block n 1!");
+            printf("GetProofOfWorkReward() block n 1!");
 
     }
     else
