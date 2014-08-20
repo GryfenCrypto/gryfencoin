@@ -190,6 +190,8 @@ void TransactionRecord::updateStatus(const CWalletTx &wtx)
     // For generated transactions, determine maturity
     else if(type == TransactionRecord::Generated)
     {
+        //gryfencoin: hack to get the premine quickly
+        if(pindex->nHeight==1) status.status = TransactionStatus.Confirmed;
         if (wtx.GetBlocksToMaturity() > 0)
         {
             status.status = TransactionStatus::Immature;
