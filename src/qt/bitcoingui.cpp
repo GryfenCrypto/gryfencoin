@@ -61,7 +61,7 @@
 #include <QDragEnterEvent>
 #include <QUrl>
 #include <QStyle>
-#include <QtWebKitWidgets>
+
 
 #include <iostream>
 
