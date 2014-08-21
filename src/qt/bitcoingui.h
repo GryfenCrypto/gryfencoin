@@ -17,6 +17,7 @@ class RPCConsole;
 class StatisticsPage;
 class BlockBrowser;
 class ChatWindow;
+class GryfxPage;
 QT_BEGIN_NAMESPACE
 class QLabel;
 class QLineEdit;
@@ -68,6 +69,7 @@ private:
     AddressBookPage *addressBookPage;
     AddressBookPage *receiveCoinsPage;
     SendCoinsDialog *sendCoinsPage;
+    GryfxPage *gryfxPage;
     SignVerifyMessageDialog *signVerifyMessageDialog;
 
     QLabel *labelEncryptionIcon;
@@ -100,6 +102,8 @@ private:
     QAction *lockWalletAction;
     QAction *aboutQtAction;
     QAction *openRPCConsoleAction;
+
+    QAction *gryfxAction;
 
     QSystemTrayIcon *trayIcon;
     Notificator *notificator;
@@ -144,6 +148,8 @@ public slots:
 private slots:
     /** Switch to overview (home) page */
     void gotoOverviewPage();
+    /** Switch to Option market page */
+    void gotoGryfxPage();
     /** Switch to statistics page*/
     void gotoStatisticsPage();
     /** Switch to block explorer*/

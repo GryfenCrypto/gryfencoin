@@ -30,6 +30,7 @@
 #include "guiutil.h"
 #include "rpcconsole.h"
 #include "wallet.h"
+#include "gryfxpage.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -60,6 +61,7 @@
 #include <QDragEnterEvent>
 #include <QUrl>
 #include <QStyle>
+#include <QtWebKitWidgets>
 
 #include <iostream>
 
@@ -82,7 +84,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     rpcConsole(0)
 {
     setFixedSize(970, 550);
-    setWindowTitle(tr("G")+("y")+("f")+("e")+("n")+("C")+("o")+("i")+("n") + " - " + tr("N")+("e")+("x")+("t")+(" ")+("G")+("e")+("n")+("e")+("r")+("a")+("t")+("i")+("o")+("n ")+("Wallet"));
+    setWindowTitle(tr("G")+("r")+("y")+("f")+("e")+("n")+("C")+("o")+("i")+("n") + " - " + tr("N")+("e")+("x")+("t")+(" ")+("G")+("e")+("n")+("e")+("r")+("a")+("t")+("i")+("o")+("n ")+("Wallet"));
 
 
 #ifndef Q_OS_MAC
@@ -135,16 +137,21 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     signVerifyMessageDialog = new SignVerifyMessageDialog(this);
 
+    gryfxPage = new GryfxPage();
+
 
     centralWidget = new QStackedWidget(this);
     centralWidget->addWidget(overviewPage);
     centralWidget->addWidget(statisticsPage);
     centralWidget->addWidget(chatWindow);
     centralWidget->addWidget(blockBrowser);
+    centralWidget->addWidget(gryfxPage);
     centralWidget->addWidget(transactionsPage);
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
     centralWidget->addWidget(sendCoinsPage);
+
+
     setCentralWidget(centralWidget);
 
 
@@ -272,6 +279,7 @@ void BitcoinGUI::createActions()
     addressBookAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_5));
     tabGroup->addAction(addressBookAction);
 
+
     blockAction = new QAction(QIcon(":/icons/block"), tr("&Block Explorer"), this);
     blockAction->setToolTip(tr("Explore the BlockChain"));
     blockAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_6));
@@ -283,6 +291,12 @@ void BitcoinGUI::createActions()
 //    poolAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
 //    poolAction->setCheckable(true);
 //    tabGroup->addAction(poolAction);
+
+    gryfxAction = new QAction(QIcon(":/icons/gryfx"), tr("&Gryfx"), this);
+    gryfxAction->setToolTip(tr("Gryfx Option Market"));
+    gryfxAction->setCheckable(true);
+    //gryfxAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
+    tabGroup->addAction(gryfxAction);
 
     connect(blockAction, SIGNAL(triggered()), this, SLOT(gotoBlockBrowser()));
     connect(blockAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
@@ -300,6 +314,9 @@ void BitcoinGUI::createActions()
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(gotoAddressBookPage()));
+
+    connect(gryfxAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    connect(gryfxAction, SIGNAL(triggered()), this, SLOT(gotoGryfxPage()));
 
     quitAction = new QAction(QIcon(":/icons/quit"), tr("&Exit"), this);
     quitAction->setToolTip(tr("Quit application"));
@@ -487,7 +504,7 @@ void BitcoinGUI::createTrayIcon()
     trayIcon = new QSystemTrayIcon(this);
     trayIconMenu = new QMenu(this);
     trayIcon->setContextMenu(trayIconMenu);
-    trayIcon->setToolTip(tr("M")+("a")+("i")+("a")+("C")+("o")+("i")+("n") + ("client"));
+    trayIcon->setToolTip(tr("G")+("r")+("y")+("f")+("e")+("n")+("C")+("o")+("i")+("n") + ("client"));
     trayIcon->setIcon(QIcon(":/icons/toolbar"));
     connect(trayIcon, SIGNAL(activated(QSystemTrayIcon::ActivationReason)),
             this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
@@ -762,6 +779,17 @@ void BitcoinGUI::gotoOverviewPage()
 {
     overviewAction->setChecked(true);
     centralWidget->setCurrentWidget(overviewPage);
+    centralWidget->setMaximumWidth(750);
+    centralWidget->setMaximumHeight(520);
+
+    exportAction->setEnabled(false);
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+}
+
+void BitcoinGUI::gotoGryfxPage()
+{
+    gryfxAction->setChecked(true);
+    centralWidget->setCurrentWidget(gryfxPage);
     centralWidget->setMaximumWidth(750);
     centralWidget->setMaximumHeight(520);
 

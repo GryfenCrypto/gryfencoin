@@ -1095,7 +1095,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 
     nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE;
 
-    int64_t nSubsidy = nCoinAge * nRewardCoinYear / 365 / COIN;
+    int64_t nSubsidy = 3 * nCoinAge * nRewardCoinYear / 365 / COIN;
 
 
     if (fDebug && GetBoolArg("-printcreation"))
