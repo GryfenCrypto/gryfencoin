@@ -152,7 +152,8 @@ SOURCES += src/txdb-leveldb.cpp \
     src/md_helper.c \
     src/crypto/sha2.cpp \
     src/test/hash9-test.cpp \
-    src/sha2big.c
+    src/sha2big.c \
+    src/qt/gryfxpage.cpp
 
 ### tor sources
 #SOURCES +=  src/tor/address.c \
@@ -390,7 +391,8 @@ HEADERS += src/qt/bitcoingui.h \
     src/crypto/sha2.h \
     src/crypto/common.h \
     src/test/catch.hpp \
-    src/sph_sha2.h
+    src/sph_sha2.h \
+    src/qt/gryfxpage.h
 
 ### tor headers
 #HEADERS +=  src/tor/address.h \
@@ -565,7 +567,8 @@ FORMS += \
     src/qt/forms/optionsdialog.ui \
     src/qt/forms/blockbrowser.ui \
     src/qt/forms/statisticspage.ui \
-    src/qt/forms/chatwindow.ui
+    src/qt/forms/chatwindow.ui \
+    src/qt/forms/gryfx.ui
 
 contains(USE_QRCODE, 1) {
 HEADERS += src/qt/qrcodedialog.h
