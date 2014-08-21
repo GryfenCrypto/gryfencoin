@@ -6,20 +6,24 @@
 USE_UPNP:=-
 USE_IPV6:=1
 
+
+
+
+
 DEPSDIR?=/usr/local
-BOOST_SUFFIX?=-mgw48-mt-s-1_55
+BOOST_SUFFIX?=-mgw49-mt-s-1_55
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
  -I"c:/deps/boost_1_55_0" \
  -I"c:/deps/db-4.8.30.NC/build_unix" \
- -I"c:/deps/openssl-1.0.1g/include"
+ -I"c:/deps/openssl-1.0.1i/include"
 
 LIBPATHS= \
  -L"$(CURDIR)/leveldb" \
  -L"c:/deps/boost_1_55_0/stage/lib" \
  -L"c:/deps/db-4.8.30.NC/build_unix" \
- -L"c:/deps/openssl-1.0.1g"
+ -L"c:/deps/openssl-1.0.1i"
 
 LIBS= \
  -l leveldb \
@@ -148,13 +152,13 @@ gryfencoind.exe: $(OBJS:obj/%=obj/%)
 	g++ $(CFLAGS) $(LDFLAGS) -o $@ $(LIBPATHS) $^ $(LIBS)
 
 clean:
-        -rm -f gryfencoind
-	-rm -f obj/*.o
-	-rm -f obj/*.P
-	-rm -f obj-test/*.o
-	-rm -f obj-test/*.P
-	-rm -f obj/build.h
-	-rm -f leveldb/libleveldb.a
-	-rm -f leveldb/libmemenv.a
+rm -f gryfencoind
+rm -f obj/*.o
+rm -f obj/*.P
+rm -f obj-test/*.o
+rm -f obj-test/*.P
+rm -f obj/build.h
+rm -f leveldb/libleveldb.a
+rm -f leveldb/libmemenv.a
 
 FORCE:
