@@ -30,7 +30,7 @@
 #include "guiutil.h"
 #include "rpcconsole.h"
 #include "wallet.h"
-#include "gryfxpage.h"
+//#include "gryfxpage.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -137,7 +137,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     signVerifyMessageDialog = new SignVerifyMessageDialog(this);
 
-    gryfxPage = new GryfxPage();
+//    gryfxPage = new GryfxPage();
 
 
     centralWidget = new QStackedWidget(this);
@@ -145,7 +145,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(statisticsPage);
     centralWidget->addWidget(chatWindow);
     centralWidget->addWidget(blockBrowser);
-    centralWidget->addWidget(gryfxPage);
+//    centralWidget->addWidget(gryfxPage);
     centralWidget->addWidget(transactionsPage);
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
@@ -316,7 +316,7 @@ void BitcoinGUI::createActions()
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(gotoAddressBookPage()));
 
     connect(gryfxAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-    connect(gryfxAction, SIGNAL(triggered()), this, SLOT(gotoGryfxPage()));
+//    connect(gryfxAction, SIGNAL(triggered()), this, SLOT(gotoGryfxPage()));
 
     quitAction = new QAction(QIcon(":/icons/quit"), tr("&Exit"), this);
     quitAction->setToolTip(tr("Quit application"));
@@ -786,16 +786,16 @@ void BitcoinGUI::gotoOverviewPage()
     disconnect(exportAction, SIGNAL(triggered()), 0, 0);
 }
 
-void BitcoinGUI::gotoGryfxPage()
-{
-    gryfxAction->setChecked(true);
-    centralWidget->setCurrentWidget(gryfxPage);
-    centralWidget->setMaximumWidth(750);
-    centralWidget->setMaximumHeight(520);
+//void BitcoinGUI::gotoGryfxPage()
+//{
+//    gryfxAction->setChecked(true);
+//    centralWidget->setCurrentWidget(gryfxPage);
+//    centralWidget->setMaximumWidth(750);
+//    centralWidget->setMaximumHeight(520);
 
-    exportAction->setEnabled(false);
-    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-}
+//    exportAction->setEnabled(false);
+//    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+//}
 
 
 void BitcoinGUI::gotoBlockBrowser()

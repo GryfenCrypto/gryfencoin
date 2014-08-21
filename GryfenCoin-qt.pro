@@ -153,7 +153,6 @@ SOURCES += src/txdb-leveldb.cpp \
     src/crypto/sha2.cpp \
     src/test/hash9-test.cpp \
     src/sha2big.c \
-    src/qt/gryfxpage.cpp
 
 ### tor sources
 #SOURCES +=  src/tor/address.c \
@@ -392,7 +391,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/crypto/common.h \
     src/test/catch.hpp \
     src/sph_sha2.h \
-    src/qt/gryfxpage.h
+
 
 ### tor headers
 #HEADERS +=  src/tor/address.h \
