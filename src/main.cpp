@@ -1745,21 +1745,6 @@ bool CBlock::ConnectBlock(CTxDB& txdb, CBlockIndex* pindex, bool fJustCheck)
     }
 
     //gryfencoin: disabled
-    if(IsProofOfWork())
-    {
-        CBitcoinAddress address(!fTestNet ? FOUNDATION : FOUNDATION_TEST);
-        CScript scriptPubKey;
-        scriptPubKey.SetDestination(address.Get());
-        if (vtx[0].vout[1].scriptPubKey != scriptPubKey)
-            return error("ConnectBlock() : coinbase does not pay to the dev address)");
-
-        // gryfencrypto:
-        int64_t nExtraFee = 0;//nFees * EXTRA_FEE_PCT;
-        //if(nExtraFee < MIN_EXTRA_FEE) nExtraFee=MIN_EXTRA_FEE;
-        if (vtx[0].vout[1].nValue < nExtraFee)
-            return error("ConnectBlock() : coinbase does not pay enough to dev addresss");
-    }
-
     if (IsProofOfStake())
     {
         // gryfencoin: coin stake tx earns reward instead of paying fee
