@@ -141,17 +141,17 @@ void ChatWindow::connecte()
     ui->hide3->hide();
 
     ui->tab->addTab(textEdit,"Console/PM");
-    ui->tab->setTabToolTip(ui->tab->count()-1,"irc.freenode.net");
+    ui->tab->setTabToolTip(ui->tab->count()-1,"irc.webchat.org");
     // current tab is now the last, therefore remove all but the last
     for (int i = ui->tab->count(); i > 1; --i) {
        ui->tab->removeTab(0);
     }
 
-    serveurs.insert("irc.freenode.net",serveur);
+    serveurs.insert("irc.webchat.org",serveur);
 
 	serveur->pseudo=ui->editPseudo->text();
-    serveur->serveur="irc.freenode.net";
-    serveur->port=6667;
+    serveur->serveur="irc.webchat.org";
+    serveur->port=7000;
 	serveur->affichage=textEdit;
     serveur->tab=ui->tab;
 	serveur->userList=ui->userView;
@@ -162,7 +162,7 @@ void ChatWindow::connecte()
 	connect(serveur, SIGNAL(joinTab()),this, SLOT(tabJoined() ));
 	connect(serveur, SIGNAL(tabJoined()),this, SLOT(tabJoining() ));
 
-    serveur->connectToHost("irc.freenode.net",6667);
+    serveur->connectToHost("irc.webchat.org",7000);
 
 	ui->tab->setCurrentIndex(ui->tab->count()-1);
 }

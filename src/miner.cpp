@@ -120,16 +120,14 @@ CBlock* CreateNewBlock(CWallet* pwallet, bool fProofOfStake, int64_t* pFees)
     CTransaction txNew;
     txNew.vin.resize(1);
     txNew.vin[0].prevout.SetNull();
-    CBitcoinAddress address(!fTestNet ? FOUNDATION : FOUNDATION_TEST);
-    txNew.vout.resize(2);
-    //gryfencoin:
-    // disable extra transaction
-    //txNew.vout[1].SetEmpty();
+    //CBitcoinAddress address(!fTestNet ? FOUNDATION : FOUNDATION_TEST);
+    txNew.vout.resize(1);
+
     if (!fProofOfStake)
     {
         CReserveKey reservekey(pwallet);
         txNew.vout[0].scriptPubKey.SetDestination(reservekey.GetReservedKey().GetID());
-        txNew.vout[1].scriptPubKey.SetDestination(address.Get());
+        //txNew.vout[1].scriptPubKey.SetDestination(address.Get());
     }
     else
     {
@@ -138,7 +136,7 @@ CBlock* CreateNewBlock(CWallet* pwallet, bool fProofOfStake, int64_t* pFees)
         assert(txNew.vin[0].scriptSig.size() <= 100);
 
         txNew.vout[0].SetEmpty();
-        txNew.vout[1].SetEmpty();
+        //txNew.vout[1].SetEmpty();
     }
 
     // Add our coinbase tx as first transaction
@@ -366,11 +364,7 @@ CBlock* CreateNewBlock(CWallet* pwallet, bool fProofOfStake, int64_t* pFees)
 
         if (!fProofOfStake)
         {
-            int64_t nPowReward = GetProofOfWorkReward(nFees);
-            int64_t nExtraFee = 0;//EXTRA_FEE_PCT * nFees;
-            //if(nExtraFee < MIN_EXTRA_FEE) nExtraFee=MIN_EXTRA_FEE;
-            pblock->vtx[0].vout[0].nValue = nPowReward;// - nExtraFee;
-            pblock->vtx[0].vout[1].nValue = nExtraFee;
+            pblock->vtx[0].vout[0].nValue = GetProofOfWorkReward(nFees);
         }
 
         if (pFees)

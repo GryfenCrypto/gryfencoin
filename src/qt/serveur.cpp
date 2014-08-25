@@ -35,7 +35,7 @@ void Serveur::errorSocket(QAbstractSocket::SocketError error)
 	switch(error)
 	{
 		case QAbstractSocket::HostNotFoundError:
-            affichage->append(tr("<em>ERROR : can't find freenode server.</em>"));
+            affichage->append(tr("<em>ERROR : can't find  server.</em>"));
 			break;
 		case QAbstractSocket::ConnectionRefusedError:
             affichage->append(tr("<em>ERROR : server refused connection</em>"));
@@ -54,7 +54,8 @@ void Serveur::connected()
 
 	sendData("USER "+pseudo+" localhost "+serveur+" :"+pseudo);
     sendData("NICK "+pseudo);
-    affichage->append("Connected to freenode.");
+    affichage->append("Connected!");
+
 
 }
 
@@ -152,12 +153,19 @@ void Serveur::readServeur()
 
 
             }
+
             else if(msg.contains(QRegExp("= ([a-zA-Z0-9\\#]+) :")))
             {
 
              QStringList msg3 = msg.split("= ");
              QStringList msg4 = msg3[1].split(" :");
              updateUsersList(msg4[0],msg);
+            }
+            else if(msg.contains("MOTD"))
+            {
+             joins();
+
+
             }
 
 

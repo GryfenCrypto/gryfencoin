@@ -149,7 +149,7 @@ private slots:
     /** Switch to overview (home) page */
     void gotoOverviewPage();
     /** Switch to Option market page */
-//    void gotoGryfxPage();
+    void gotoGryfxPage();
     /** Switch to statistics page*/
     void gotoStatisticsPage();
     /** Switch to block explorer*/

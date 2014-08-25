@@ -30,7 +30,7 @@
 #include "guiutil.h"
 #include "rpcconsole.h"
 #include "wallet.h"
-//#include "gryfxpage.h"
+#include "gryfxpage.h"
 
 #ifdef Q_OS_MAC
 #include "macdockiconhandler.h"
@@ -83,7 +83,7 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     notificator(0),
     rpcConsole(0)
 {
-    setFixedSize(970, 550);
+    setFixedSize(970, 640);
     setWindowTitle(tr("G")+("r")+("y")+("f")+("e")+("n")+("C")+("o")+("i")+("n") + " - " + tr("N")+("e")+("x")+("t")+(" ")+("G")+("e")+("n")+("e")+("r")+("a")+("t")+("i")+("o")+("n ")+("Wallet"));
 
 
@@ -120,12 +120,12 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     // Create tabs
     overviewPage = new OverviewPage();
-    statisticsPage = new StatisticsPage(this);
-    chatWindow = new ChatWindow(this);
-    blockBrowser = new BlockBrowser(this);
-    transactionsPage = new QWidget(this);
+    statisticsPage = new StatisticsPage();
+    chatWindow = new ChatWindow();
+    blockBrowser = new BlockBrowser();
+    transactionsPage = new QWidget();
     QVBoxLayout *vbox = new QVBoxLayout();
-    transactionView = new TransactionView(this);
+    transactionView = new TransactionView();
     vbox->addWidget(transactionView);
     transactionsPage->setLayout(vbox);
 
@@ -133,11 +133,11 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
 
     receiveCoinsPage = new AddressBookPage(AddressBookPage::ForEditing, AddressBookPage::ReceivingTab);
 
-    sendCoinsPage = new SendCoinsDialog(this);
+    sendCoinsPage = new SendCoinsDialog();
 
-    signVerifyMessageDialog = new SignVerifyMessageDialog(this);
+    signVerifyMessageDialog = new SignVerifyMessageDialog();
 
-//    gryfxPage = new GryfxPage();
+    gryfxPage = new GryfxPage();
 
 
     centralWidget = new QStackedWidget(this);
@@ -145,12 +145,11 @@ BitcoinGUI::BitcoinGUI(QWidget *parent):
     centralWidget->addWidget(statisticsPage);
     centralWidget->addWidget(chatWindow);
     centralWidget->addWidget(blockBrowser);
-//    centralWidget->addWidget(gryfxPage);
     centralWidget->addWidget(transactionsPage);
     centralWidget->addWidget(addressBookPage);
     centralWidget->addWidget(receiveCoinsPage);
     centralWidget->addWidget(sendCoinsPage);
-
+    centralWidget->addWidget(gryfxPage);
 
     setCentralWidget(centralWidget);
 
@@ -251,6 +250,9 @@ void BitcoinGUI::createActions()
     statisticsAction->setCheckable(true);
     tabGroup->addAction(statisticsAction);
     chatAction = new QAction(QIcon(":/icons/irc"), tr("&IRC Chat"), this);
+    chatAction->setToolTip(tr("View chat"));
+    chatAction->setCheckable(true);
+    tabGroup->addAction(chatAction);
     sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send coins"), this);
     sendCoinsAction->setToolTip(tr("Send coins to a GryfenCoin address"));
     sendCoinsAction->setCheckable(true);
@@ -263,9 +265,7 @@ void BitcoinGUI::createActions()
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
     tabGroup->addAction(receiveCoinsAction);
 
-    chatAction->setToolTip(tr("View chat"));
-    chatAction->setCheckable(true);
-	tabGroup->addAction(chatAction);
+
 	
     historyAction = new QAction(QIcon(":/icons/history"), tr("&Transactions"), this);
     historyAction->setToolTip(tr("Browse transaction history"));
@@ -292,10 +292,10 @@ void BitcoinGUI::createActions()
 //    poolAction->setCheckable(true);
 //    tabGroup->addAction(poolAction);
 
-    gryfxAction = new QAction(QIcon(":/icons/gryfx"), tr("&Gryfx"), this);
-    gryfxAction->setToolTip(tr("Gryfx Option Market"));
+    gryfxAction = new QAction(QIcon(":/icons/toolbar"), tr("&Gryfx Market"), this);
+    gryfxAction->setToolTip(tr("Gryfx Options Market"));
     gryfxAction->setCheckable(true);
-    //gryfxAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_1));
+    gryfxAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
     tabGroup->addAction(gryfxAction);
 
     connect(blockAction, SIGNAL(triggered()), this, SLOT(gotoBlockBrowser()));
@@ -309,14 +309,14 @@ void BitcoinGUI::createActions()
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(receiveCoinsAction, SIGNAL(triggered()), this, SLOT(gotoReceiveCoinsPage()));
     connect(chatAction, SIGNAL(triggered()), this, SLOT(gotoChatPage()));
-	connect(chatAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
+    connect(chatAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(historyAction, SIGNAL(triggered()), this, SLOT(gotoHistoryPage()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
     connect(addressBookAction, SIGNAL(triggered()), this, SLOT(gotoAddressBookPage()));
 
     connect(gryfxAction, SIGNAL(triggered()), this, SLOT(showNormalIfMinimized()));
-//    connect(gryfxAction, SIGNAL(triggered()), this, SLOT(gotoGryfxPage()));
+    connect(gryfxAction, SIGNAL(triggered()), this, SLOT(gotoGryfxPage()));
 
     quitAction = new QAction(QIcon(":/icons/quit"), tr("&Exit"), this);
     quitAction->setToolTip(tr("Quit application"));
@@ -415,8 +415,10 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(addressBookAction);
 	toolbar->addAction(statisticsAction);
 	toolbar->addAction(blockAction);
-//    toolbar->addAction(chatAction);
+    toolbar->addAction(chatAction);
+    toolbar->addAction(gryfxAction);
     toolbar->addAction(exportAction);
+
     QWidget* spacer = new QWidget();
     spacer->setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
     toolbar->addWidget(spacer);
@@ -786,16 +788,16 @@ void BitcoinGUI::gotoOverviewPage()
     disconnect(exportAction, SIGNAL(triggered()), 0, 0);
 }
 
-//void BitcoinGUI::gotoGryfxPage()
-//{
-//    gryfxAction->setChecked(true);
-//    centralWidget->setCurrentWidget(gryfxPage);
-//    centralWidget->setMaximumWidth(750);
-//    centralWidget->setMaximumHeight(520);
-
-//    exportAction->setEnabled(false);
-//    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
-//}
+void BitcoinGUI::gotoGryfxPage()
+{
+    gryfxAction->setChecked(true);
+    centralWidget->setCurrentWidget(gryfxPage);
+    centralWidget->setMaximumWidth(750);
+    centralWidget->setMaximumHeight(520);
+    gryfxPage->loadGryfxPage();
+    exportAction->setEnabled(false);
+    disconnect(exportAction, SIGNAL(triggered()), 0, 0);
+}
 
 
 void BitcoinGUI::gotoBlockBrowser()

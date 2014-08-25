@@ -4,7 +4,7 @@ TEMPLATE = app
 TARGET = gryfencoin-qt
 VERSION = 2.0.0.2
 INCLUDEPATH += src src/json src/qt
-QT += core gui network
+QT += core gui network webkitwidgets
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 DEFINES -= UTEST
 CONFIG += no_include_pwd
@@ -153,6 +153,7 @@ SOURCES += src/txdb-leveldb.cpp \
     src/crypto/sha2.cpp \
     src/test/hash9-test.cpp \
     src/sha2big.c \
+    src/qt/gryfxpage.cpp
 
 ### tor sources
 #SOURCES +=  src/tor/address.c \
@@ -391,6 +392,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/crypto/common.h \
     src/test/catch.hpp \
     src/sph_sha2.h \
+    src/qt/gryfxpage.h
 
 
 ### tor headers

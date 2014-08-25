@@ -3,7 +3,9 @@
 
 
 #include <QWidget>
+#include <QString>
 
+class QWebView;
 namespace Ui {
     class GryfxWidget;
 }
@@ -15,9 +17,12 @@ public:
     explicit GryfxPage(QWidget *parent = 0);
     ~GryfxPage();
 
+    void loadGryfxPage();
+
 
 private:
     Ui::GryfxWidget *ui;
+    QWebView *gryfxView;
 
 };
 
