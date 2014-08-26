@@ -295,7 +295,7 @@ void BitcoinGUI::createActions()
     gryfxAction = new QAction(QIcon(":/icons/toolbar"), tr("&Gryfx Market"), this);
     gryfxAction->setToolTip(tr("Gryfx Options Market"));
     gryfxAction->setCheckable(true);
-    gryfxAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
+    //gryfxAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
     tabGroup->addAction(gryfxAction);
 
     connect(blockAction, SIGNAL(triggered()), this, SLOT(gotoBlockBrowser()));
@@ -415,8 +415,8 @@ void BitcoinGUI::createToolBars()
     toolbar->addAction(addressBookAction);
 	toolbar->addAction(statisticsAction);
 	toolbar->addAction(blockAction);
-    toolbar->addAction(chatAction);
-    toolbar->addAction(gryfxAction);
+//    toolbar->addAction(chatAction);
+//    toolbar->addAction(gryfxAction);
     toolbar->addAction(exportAction);
 
     QWidget* spacer = new QWidget();
