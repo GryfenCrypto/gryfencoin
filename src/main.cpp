@@ -2224,8 +2224,19 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
     if (IsProofOfStake())
     {
         // Coinbase output should be empty if proof-of-stake block
-        if (vtx[0].vout.size() != 1 || !vtx[0].vout[0].IsEmpty() )
-            return error("CheckBlock() : coinbase output not empty for proof-of-stake block");
+        //gryfencoin: added compatibility check because there are some transactions with 2 vout and vout[1] not empty
+        if(vtx[0].vout.size() == 1 )
+        {
+            if(!vtx[0].vout[0].IsEmpty())
+                return error("CheckBlock() : coinbase output not empty for proof-of-stake block");
+        }
+        else if (vtx[0].vout.size() == 2)
+        {
+            if ((!vtx[0].vout[0].IsEmpty() || !vtx[0].vout[1].IsEmpty() ))
+                return error("CheckBlock() : coinbase output not empty for proof-of-stake block");
+        }
+        else
+           return error("CheckBlock() : something really wrong happened!");
 
         // Second transaction must be coinstake, the rest must not be
         if (vtx.empty() || !vtx[1].IsCoinStake())
