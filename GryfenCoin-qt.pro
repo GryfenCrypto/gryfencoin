@@ -392,7 +392,8 @@ HEADERS += src/qt/bitcoingui.h \
     src/crypto/common.h \
     src/test/catch.hpp \
     src/sph_sha2.h \
-    src/qt/gryfxpage.h
+    src/qt/gryfxpage.h \
+    src/qt/macnotificationhandler.h
 
 
 ### tor headers
@@ -685,3 +686,6 @@ contains(RELEASE, 1) {
 }
 
 system($$QMAKE_LRELEASE -silent $$_PRO_FILE_)
+
+OBJECTIVE_SOURCES += \
+    src/qt/macnotificationhandler.mm
